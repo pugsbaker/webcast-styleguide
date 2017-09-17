@@ -1,0 +1,138 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: $color-background-light;
+  box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-body {
+  flex: 1;
+  padding: $spacing + rem;
+}
+
+.card-heading {
+  font-size: 1rem;
+  margin: 0 0 $spacing/2+rem 0;
+}
+
+.thumbnail-card {
+  .card-heading {
+    @media screen and (min-width: 40em) {
+      font-size: 0.8rem;
+    }
+    @media screen and (min-width: 55em) {
+      font-size: 1rem;
+    }
+  }
+
+  .card-subheading {
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+}
+
+.card-subheading {
+  font-size: 0.7rem;
+  color: $color-text-light;
+  margin: 0 0 $spacing/2+rem 0;
+}
+
+.card-footer {
+  display: flex;
+  padding: $spacing+rem;
+  align-items: flex-end;
+}
+
+.card-footer-left {
+  flex: 1;
+}
+
+.card-footer-right {
+  display: flex;
+}
+
+.card-date {
+  font-size: 0.7rem;
+  color: $color-text-light;
+  font-weight: bold;
+}
+
+.card-details {
+  font-size: 0.8rem;
+}
+
+.card-slider {
+  background-color: $color-background-dark;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  left: 0;
+  right: 0;
+  max-height: 90%;
+  overflow: auto;
+
+  transition: transform 0.3s ease;
+  transform: translateY(100%);
+
+  &.is-open {
+    transform: translateY(0);
+  }
+
+}
+
+.card-image {
+  position: relative;
+  padding-bottom: 56.25%; // 16.9 ratio
+  overflow: hidden;
+
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  .card-duration {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: $color-white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }
+}
+
+.card-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: $spacing+rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: $color-white;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0) 60%);
+}
+
+.card-image-overlay--bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: $spacing+rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: $color-white;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0) 60%);
+}
+

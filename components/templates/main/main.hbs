@@ -1,0 +1,79 @@
+
+<header class="t-background-top">
+  <div class="main-header">
+    <div class="masthead">
+      <a href="/"><img src="http://register.webcastcloud.com.au/smithink/VideoChannel/smithink-logo-header.png" alt="" class="logo"></a>
+    </div>
+    {{> @main-nav }}
+  </div>
+</header>
+
+<section class="section t-background-top">
+  <div class="content">
+    {{> @highlight-reel }}
+  </div>
+</section>
+<section class="section">
+  <div class="content">
+    <div class="action-bar"> 
+      <div class="action-bar-left">
+        <ul class="filter-list">
+          <li class="filter-list-item filter-list-item--long">
+            <input type="search" id="searchInput" placeholder="Search">
+          </li>
+          <li class="filter-list-item">
+            <select id="slSubCatalogues" name="slSubCatalogues" data-filter-multiple="true">
+              <option value="-1">Expos</option>
+            </select>
+          </li>
+          <li class="filter-list-item">
+            <select id="slSubCatalogues" name="slSubCatalogues" data-filter-multiple="true">
+              <option value="-1">Conferences</option>
+            </select>
+          </li>
+          <li class="filter-list-item">
+            <select id="slSubCatalogues" name="slSubCatalogues" data-filter-multiple="true">
+              <option value="-1">Types</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+      </div>
+    <div class="action-bar">
+      <div class="action-bar-left">
+      <ul class="pagination" role="navigation" aria-label="Pagination">
+        <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li class="ellipsis" aria-hidden="true"></li>
+        <li><a href="#" aria-label="Page 12">12</a></li>
+        <li><a href="#" aria-label="Page 13">13</a></li>
+        <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+      </ul>
+      </div>
+     <div class="action-bar-right">
+       <select id="slSubCatalogues" name="slSubCatalogues" data-filter-multiple="true">
+            <option value="-1">Date: Most Recent</option>
+          </select>
+     </div>
+    </div>
+    {{> @card-list }}
+    <div class="action-bar">
+      <div class="action-bar-center">
+      <ul class="pagination" role="navigation" aria-label="Pagination">
+        <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+        <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+        <li><a href="#" aria-label="Page 2">2</a></li>
+        <li><a href="#" aria-label="Page 3">3</a></li>
+        <li><a href="#" aria-label="Page 4">4</a></li>
+        <li class="ellipsis" aria-hidden="true"></li>
+        <li><a href="#" aria-label="Page 12">12</a></li>
+        <li><a href="#" aria-label="Page 13">13</a></li>
+        <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</section>

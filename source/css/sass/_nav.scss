@@ -1,0 +1,41 @@
+.nav-main {
+  flex: 1;
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  >li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 40em) {
+    flex: 1;
+  }
+}
+
+.nav-main-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: $color-text;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    background: $color-primary;
+    height: 4px;
+    left: 1rem;
+    right: 1rem;
+    bottom:0.25rem;
+    transform: scale(0);
+    transition: 0.3s transform ease;
+  }
+
+  &:hover:after {
+    transform: scale(1);
+  }
+}

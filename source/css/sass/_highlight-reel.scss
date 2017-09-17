@@ -1,0 +1,52 @@
+.highlight-reel {
+  @media screen and (min-width: 65em) {
+    display: flex;
+  }
+
+  padding-bottom: 1.5rem;
+  border-bottom: 0.75rem solid $color-border;
+}
+
+.highlight-reel-feature {
+  flex: 3.1;
+}
+
+.highlight-reel-list {
+  flex: 1;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin: 0.5rem 0 0 0;
+  
+  @media screen and (min-width: 65em) {
+    margin: 0 0 0 0.5rem;
+  }
+}
+
+.highlight-reel-list-item {
+  margin: 0;
+  flex: 1;
+  &:not(:last-child) {
+    margin: 0 0 0.5rem 0;
+  }
+  flex-basis: 100%;
+
+  @media screen and (min-width: 40em) {
+    flex-basis: auto;
+    &:not(:last-child) {
+      margin: 0 0.5rem 0 0;
+    }
+  }
+
+  @media screen and (min-width: 65em) {
+    flex-basis: 100%;
+    &:not(:last-child) {
+      margin: 0 0 0.5rem 0;
+    }
+  }
+
+
+
+}

@@ -2,9 +2,7 @@
   <img src="{{ catalogue_item.ThumbnailUrl }}" alt="">
   <div class="card-image-overlay">
     <div class="card-price">
-      <span class="h2">
-        {{catalogue_item.Cost}}
-      </span>
+      <span class="h2">{{catalogue_item.Cost}}</span>
     </div>
     {{#catalogue_item.CustomFields}}
       <span class="label">{{FieldName}} {{FieldLabel}}</span>

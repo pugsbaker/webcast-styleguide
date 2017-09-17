@@ -53,7 +53,7 @@ gulp.task("copy:css", function() {
 });
 
 gulp.task('deploy', function() {
-  return gulp.src(normalizePath("./public/") + "/**/*")
+  return gulp.src(normalizePath("./build/") + "/**/*")
     .pipe(ghPages());
 });
 
@@ -125,3 +125,5 @@ gulp.task('fractal:build', function(){
 });
 
 gulp.task("default", gulp.series("assets", "fractal:start"));
+gulp.task("build", gulp.series("assets", "fractal:build"));
+gulp.task("deploy", gulp.series("assets", "fractal:build", "deploy"));

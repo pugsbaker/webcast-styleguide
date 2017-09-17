@@ -1,4 +1,18 @@
 {
+  "variants": [
+    {
+        "name": "large",
+        "context": {
+          "modifier": "card-list--large"
+        }
+    },
+    {
+      "name": "small",
+      "context": {
+        "modifier": "card-list--small"
+      }
+  }
+],
   "context": {
     "catalogue_items": [
       {
@@ -50,7 +64,8 @@
             }
           ],
           "PodcastUrl": "http://itunes.com/rss",
-          "VodcastUrl": "http://itunes.com/rss"
+          "VodcastUrl": "http://itunes.com/rss",
+          "buttonLabel": "Add to Cart"
         }
       },
       {
@@ -102,7 +117,8 @@
             }
           ],
           "PodcastUrl": "http://itunes.com/rss",
-          "VodcastUrl": "http://itunes.com/rss"
+          "VodcastUrl": "http://itunes.com/rss",
+          "buttonLabel": "Add to Cart"
         }
       },
       {
@@ -208,7 +224,8 @@
             }
           ],
           "PodcastUrl": "http://itunes.com/rss",
-          "VodcastUrl": "http://itunes.com/rss"
+          "VodcastUrl": "http://itunes.com/rss",
+          "buttonLabel": "Add to Cart"
         }
       },
       {
@@ -260,7 +277,8 @@
             }
           ],
           "PodcastUrl": "http://itunes.com/rss",
-          "VodcastUrl": "http://itunes.com/rss"
+          "VodcastUrl": "http://itunes.com/rss",
+          "buttonLabel": "Add to Cart"
         }
       },
         {
@@ -312,7 +330,8 @@
               }
             ],
             "PodcastUrl": "http://itunes.com/rss",
-            "VodcastUrl": "http://itunes.com/rss"
+            "VodcastUrl": "http://itunes.com/rss",
+            "buttonLabel": "Add to Cart"
           }
         },
         {
@@ -364,7 +383,8 @@
               }
             ],
             "PodcastUrl": "http://itunes.com/rss",
-            "VodcastUrl": "http://itunes.com/rss"
+            "VodcastUrl": "http://itunes.com/rss",
+            "buttonLabel": "Add to Cart"
           }
         }
       

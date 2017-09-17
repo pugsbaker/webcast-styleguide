@@ -1,0 +1,2365 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Theme Example | WebcastTV Component Library</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../index.html" class="Header-title" data-pjax>WebcastTV Component Library</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-300d4cd15a3ef5385f8093583f53871b">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/theme-example.html" title="Component preview">
+            Theme Example
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-300d4cd15a3ef5385f8093583f53871b">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/theme-example.html"
+                sandbox="allow-same-origin allow-scripts allow-forms"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-300d4cd15a3ef5385f8093583f53871b">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-300d4cd15a3ef5385f8093583f53871b-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-300d4cd15a3ef5385f8093583f53871b-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-300d4cd15a3ef5385f8093583f53871b-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-300d4cd15a3ef5385f8093583f53871b-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-300d4cd15a3ef5385f8093583f53871b-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-300d4cd15a3ef5385f8093583f53871b-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
+    body,
+    h1,
+    .h1,
+    h2,
+    .h2,
+    h3,
+    .h3,
+    h4,
+    .h4,
+    h5,
+    .h5,
+    h6,
+    .h6 {
+        font-family: "Lato", sans-serif;
+    }
+
+    .t-text-primary {
+        color: rgb(1, 132, 204);
+    }
+
+    .t-background-light {
+        background-color: #fff;
+        ;
+    }
+
+    .t-background {
+        background-color: #f3f3f3;
+    }
+
+    .t-text-main {
+        color: #272727;
+    }
+
+    .t-text-secondary {
+        color: #999;
+    }
+
+    .main-header {
+        padding-top: 0;
+    }
+
+    .t-background-nav {
+        background-color: #fff;
+        box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
+        border-bottom: 1px solid #ccc;
+    }
+
+    .t-background-top {
+        background: #f3f3f3 url(http://publicsectornetwork.com.au/wp-content/uploads/2017/03/PSN-Banner.jpg) no-repeat;
+        background-size: contain;
+    }
+
+    .masthead {
+        padding-top: 0.5rem;
+        width: 170px;
+    }
+
+    .nav-main-item {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 0.085em;
+        text-transform: uppercase;
+        height: 90px;
+        padding-top: 37px;
+        color: #999;
+        font-size: 11.5px;
+    }
+
+    .nav-main-item:hover {
+        box-shadow: inset 0 4px 0 0 rgb(1, 132, 204);
+        color: hsl(0, 0%, 0%);
+    }
+
+    .nav-main-item::after {
+        content: initial;
+    }
+
+    .button {
+        background-color: rgb(1, 132, 204);
+    }
+
+    .button:hover {
+        background-color: #004063;
+    }
+
+    .pagination .current {
+        background-color: rgb(1, 132, 204);
+    }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t-background-nav"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"main-header "</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"masthead"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://publicsectornetwork.com.au/wp-content/uploads/2017/01/PSN_Logo.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-main"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-main-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>help<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-main-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>cart<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-main-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>register<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-main-item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span>&gt;</span>log in<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section t-background-top"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-feature"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero-tile"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/301/168"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay--bottom"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero-details"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero-details-image"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 82 82"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>fi-play-circle<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">g</span> <span class="hljs-attr">fill-rule</span>=<span class="hljs-string">"nonzero"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string">"#FFF"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M41 0C18.355 0 0 18.36 0 41.002 0 63.645 18.355 82 41 82s41-18.355 41-40.998C82 18.36 63.645 0 41 0zm0 71.133c-16.618 0-30.132-13.515-30.132-30.13 0-16.614 13.516-30.135 30.132-30.135s30.132 13.52 30.132 30.134S57.616 71.132 41 71.132z"</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M58.112 40.01l.006-.01-25.325-14.807-.007.01c-.17-.1-.355-.17-.565-.17-.633 0-1.146.52-1.146 1.162 0 .047.02.087.026.132h-.026v29.61h.026c.067.577.534 1.03 1.12 1.03.212 0 .397-.07.566-.17l.017.03L58.13 42.02l-.018-.028c.342-.2.583-.56.583-.99 0-.432-.24-.79-.583-.992z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">g</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero-details-text"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero-subheading"</span>&gt;</span>Anthony England<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero-heading t-text-primary"</span>&gt;</span>Physical education: under prioritised and our children pay the price<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-list"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-list-item"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-card"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/301/168"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay--bottom"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-details"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-heading"</span>&gt;</span>Darkingjung Barker: a lesson in closing the education gap<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subheading t-text-primary"</span>&gt;</span>Anthony England<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-list-item"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-card"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/341/278"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay--bottom"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-details"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-heading"</span>&gt;</span>Clean Water for every child, benefits all<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subheading t-text-primary"</span>&gt;</span>Anthony England<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-list-item"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"thumbnail-card"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/300/165"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay--bottom"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-details"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-heading"</span>&gt;</span>Physical education: under prioritised and our children pay the price<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subheading t-text-primary"</span>&gt;</span>Anthony England<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar-left"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"filter-list"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"filter-list-item filter-list-item--long"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"searchInput"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Search"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"filter-list-item"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">data-filter-multiple</span>=<span class="hljs-string">"true"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"-1"</span>&gt;</span>Expos<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"filter-list-item"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">data-filter-multiple</span>=<span class="hljs-string">"true"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"-1"</span>&gt;</span>Conferences<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"filter-list-item"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">data-filter-multiple</span>=<span class="hljs-string">"true"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"-1"</span>&gt;</span>Types<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar-left"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"navigation"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Pagination"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination-previous disabled"</span>&gt;</span>Previous <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"current"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>You're on page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 4"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ellipsis"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 12"</span>&gt;</span>12<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 13"</span>&gt;</span>13<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination-next"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Next page"</span>&gt;</span>Next <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar-right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">data-filter-multiple</span>=<span class="hljs-string">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"-1"</span>&gt;</span>Date: Most Recent<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-list"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-list-item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card t-background-light"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-header"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/301/168"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-price"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2"</span>&gt;</span>
+                    
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>Delegate Price $20<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-duration"</span>&gt;</span>
+                31.24
+              <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-heading t-text-main"</span>&gt;</span>Darkingjung Barker: a lesson in closing the education gap<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subheading t-text-secondary"</span>&gt;</span>Phillip Heath, Head of Barker College, Barker College<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-date t-text-secondary"</span>&gt;</span>
+              9/06/2017
+            <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-left"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button small"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-right"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M84.437 39.72H60.273V15.564c0-1-.812-1.812-1.812-1.813H41.537c-1 0-1.812.812-1.812 1.813v24.16h-24.16c-.96 0-1.812.85-1.813 1.812V58.46c0 .48.192.943.532 1.282.34.34.8.53 1.282.53h24.16v24.165c0 .48.19.942.53 1.282.34.34.803.53 1.283.53H58.46c.48 0 .943-.192 1.284-.533.338-.338.53-.8.53-1.28V60.273h24.162c.5 0 .953-.203 1.282-.53.33-.33.53-.783.53-1.284l.002-16.926c0-1-.81-1.812-1.813-1.813z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M50 12.5c-20.712 0-37.5 16.793-37.5 37.502C12.5 70.712 29.288 87.5 50 87.5s37.5-16.788 37.5-37.498C87.5 29.292 70.712 12.5 50 12.5zm3.826 58.36c0 .72-.584 1.304-1.304 1.304h-5.044c-.72 0-1.304-.583-1.304-1.304V46.642c0-.72.584-1.304 1.304-1.304h5.044c.72 0 1.304.583 1.304 1.304V70.86zM49.97 39.933c-2.47 0-4.52-2.048-4.52-4.58 0-2.53 2.05-4.517 4.52-4.517 2.53 0 4.578 1.987 4.578 4.518 0 2.53-2.048 4.58-4.58 4.58z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider-header"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-heading"</span>&gt;</span>Presentation Details<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-details"</span>&gt;</span>
+                            You understand the need to change and some of your leadership team may even want to change. However, as we all know, there is a big gap between desire and action. Achieving accelerated growth in a way that is sustainable and scalable requires the right
+                            structure, systems, infrastructure (technology) and execution. In this session, Sam Dean will go beyond the concepts to provide practical insights on how to reconstruct your offering using the right technology with the right
+                            process to become a truly client-centric advice business (and along the way have a lot more fun). With real case studies and an action plan to take away, this is one session you can’t miss.
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-list-item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card t-background-light"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-header"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/341/278"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-price"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2"</span>&gt;</span>
+                    
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>Delegate Price $20<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-duration"</span>&gt;</span>
+                31.24
+              <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-heading t-text-main"</span>&gt;</span>Clean Water for every child, benefits all<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subheading t-text-secondary"</span>&gt;</span>Rez Haremi, EssentialNeed.org<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-date t-text-secondary"</span>&gt;</span>
+              9/06/2017
+            <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-left"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button small"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-right"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M84.437 39.72H60.273V15.564c0-1-.812-1.812-1.812-1.813H41.537c-1 0-1.812.812-1.812 1.813v24.16h-24.16c-.96 0-1.812.85-1.813 1.812V58.46c0 .48.192.943.532 1.282.34.34.8.53 1.282.53h24.16v24.165c0 .48.19.942.53 1.282.34.34.803.53 1.283.53H58.46c.48 0 .943-.192 1.284-.533.338-.338.53-.8.53-1.28V60.273h24.162c.5 0 .953-.203 1.282-.53.33-.33.53-.783.53-1.284l.002-16.926c0-1-.81-1.812-1.813-1.813z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M50 12.5c-20.712 0-37.5 16.793-37.5 37.502C12.5 70.712 29.288 87.5 50 87.5s37.5-16.788 37.5-37.498C87.5 29.292 70.712 12.5 50 12.5zm3.826 58.36c0 .72-.584 1.304-1.304 1.304h-5.044c-.72 0-1.304-.583-1.304-1.304V46.642c0-.72.584-1.304 1.304-1.304h5.044c.72 0 1.304.583 1.304 1.304V70.86zM49.97 39.933c-2.47 0-4.52-2.048-4.52-4.58 0-2.53 2.05-4.517 4.52-4.517 2.53 0 4.578 1.987 4.578 4.518 0 2.53-2.048 4.58-4.58 4.58z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider-header"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-heading"</span>&gt;</span>Presentation Details<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-details"</span>&gt;</span>
+                            You understand the need to change and some of your leadership team may even want to change. However, as we all know, there is a big gap between desire and action. Achieving accelerated growth in a way that is sustainable and scalable requires the right
+                            structure, systems, infrastructure (technology) and execution. In this session, Sam Dean will go beyond the concepts to provide practical insights on how to reconstruct your offering using the right technology with the right
+                            process to become a truly client-centric advice business (and along the way have a lot more fun). With real case studies and an action plan to take away, this is one session you can’t miss.
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-list-item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card t-background-light"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-header"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/300/165"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-price"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2"</span>&gt;</span>
+                    
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>Free to View <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-duration"</span>&gt;</span>
+                31.24
+              <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-heading t-text-main"</span>&gt;</span>Physical education: under prioritised and our children pay the price<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subheading t-text-secondary"</span>&gt;</span>Prof. Richard Telford, AM, Lifestyle of our Kids (LOOK)<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-date t-text-secondary"</span>&gt;</span>
+              9/06/2017
+            <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-left"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button small"</span>&gt;</span>Watch Now<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-right"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M84.437 39.72H60.273V15.564c0-1-.812-1.812-1.812-1.813H41.537c-1 0-1.812.812-1.812 1.813v24.16h-24.16c-.96 0-1.812.85-1.813 1.812V58.46c0 .48.192.943.532 1.282.34.34.8.53 1.282.53h24.16v24.165c0 .48.19.942.53 1.282.34.34.803.53 1.283.53H58.46c.48 0 .943-.192 1.284-.533.338-.338.53-.8.53-1.28V60.273h24.162c.5 0 .953-.203 1.282-.53.33-.33.53-.783.53-1.284l.002-16.926c0-1-.81-1.812-1.813-1.813z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M50 12.5c-20.712 0-37.5 16.793-37.5 37.502C12.5 70.712 29.288 87.5 50 87.5s37.5-16.788 37.5-37.498C87.5 29.292 70.712 12.5 50 12.5zm3.826 58.36c0 .72-.584 1.304-1.304 1.304h-5.044c-.72 0-1.304-.583-1.304-1.304V46.642c0-.72.584-1.304 1.304-1.304h5.044c.72 0 1.304.583 1.304 1.304V70.86zM49.97 39.933c-2.47 0-4.52-2.048-4.52-4.58 0-2.53 2.05-4.517 4.52-4.517 2.53 0 4.578 1.987 4.578 4.518 0 2.53-2.048 4.58-4.58 4.58z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider-header"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-heading"</span>&gt;</span>Presentation Details<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-details"</span>&gt;</span>
+                            You understand the need to change and some of your leadership team may even want to change. However, as we all know, there is a big gap between desire and action. Achieving accelerated growth in a way that is sustainable and scalable requires the right
+                            structure, systems, infrastructure (technology) and execution. In this session, Sam Dean will go beyond the concepts to provide practical insights on how to reconstruct your offering using the right technology with the right
+                            process to become a truly client-centric advice business (and along the way have a lot more fun). With real case studies and an action plan to take away, this is one session you can’t miss.
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-list-item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card t-background-light"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-header"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/301/169"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-price"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2"</span>&gt;</span>
+                    
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>Delegate Price $20<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-duration"</span>&gt;</span>
+                31.24
+              <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-heading t-text-main"</span>&gt;</span>Solving problems that Matter with future-focused learning<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subheading t-text-secondary"</span>&gt;</span>Lee Crockett, President, Global Digital Citizen Foundation<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-date t-text-secondary"</span>&gt;</span>
+              9/06/2017
+            <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-left"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button small"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-right"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M84.437 39.72H60.273V15.564c0-1-.812-1.812-1.812-1.813H41.537c-1 0-1.812.812-1.812 1.813v24.16h-24.16c-.96 0-1.812.85-1.813 1.812V58.46c0 .48.192.943.532 1.282.34.34.8.53 1.282.53h24.16v24.165c0 .48.19.942.53 1.282.34.34.803.53 1.283.53H58.46c.48 0 .943-.192 1.284-.533.338-.338.53-.8.53-1.28V60.273h24.162c.5 0 .953-.203 1.282-.53.33-.33.53-.783.53-1.284l.002-16.926c0-1-.81-1.812-1.813-1.813z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M50 12.5c-20.712 0-37.5 16.793-37.5 37.502C12.5 70.712 29.288 87.5 50 87.5s37.5-16.788 37.5-37.498C87.5 29.292 70.712 12.5 50 12.5zm3.826 58.36c0 .72-.584 1.304-1.304 1.304h-5.044c-.72 0-1.304-.583-1.304-1.304V46.642c0-.72.584-1.304 1.304-1.304h5.044c.72 0 1.304.583 1.304 1.304V70.86zM49.97 39.933c-2.47 0-4.52-2.048-4.52-4.58 0-2.53 2.05-4.517 4.52-4.517 2.53 0 4.578 1.987 4.578 4.518 0 2.53-2.048 4.58-4.58 4.58z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider-header"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-heading"</span>&gt;</span>Presentation Details<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-details"</span>&gt;</span>
+                            You understand the need to change and some of your leadership team may even want to change. However, as we all know, there is a big gap between desire and action. Achieving accelerated growth in a way that is sustainable and scalable requires the right
+                            structure, systems, infrastructure (technology) and execution. In this session, Sam Dean will go beyond the concepts to provide practical insights on how to reconstruct your offering using the right technology with the right
+                            process to become a truly client-centric advice business (and along the way have a lot more fun). With real case studies and an action plan to take away, this is one session you can’t miss.
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-list-item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card t-background-light"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-header"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/302/185"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-price"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2"</span>&gt;</span>
+                    
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>Delegate Price $20<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-duration"</span>&gt;</span>
+                31.24
+              <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-heading t-text-main"</span>&gt;</span>A matter of difference: How to foster Inclusion<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subheading t-text-secondary"</span>&gt;</span>Najla Turk, Diversity and Inclusion Consultant, ConnEQt<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-date t-text-secondary"</span>&gt;</span>
+              9/06/2017
+            <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-left"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button small"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-right"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M84.437 39.72H60.273V15.564c0-1-.812-1.812-1.812-1.813H41.537c-1 0-1.812.812-1.812 1.813v24.16h-24.16c-.96 0-1.812.85-1.813 1.812V58.46c0 .48.192.943.532 1.282.34.34.8.53 1.282.53h24.16v24.165c0 .48.19.942.53 1.282.34.34.803.53 1.283.53H58.46c.48 0 .943-.192 1.284-.533.338-.338.53-.8.53-1.28V60.273h24.162c.5 0 .953-.203 1.282-.53.33-.33.53-.783.53-1.284l.002-16.926c0-1-.81-1.812-1.813-1.813z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M50 12.5c-20.712 0-37.5 16.793-37.5 37.502C12.5 70.712 29.288 87.5 50 87.5s37.5-16.788 37.5-37.498C87.5 29.292 70.712 12.5 50 12.5zm3.826 58.36c0 .72-.584 1.304-1.304 1.304h-5.044c-.72 0-1.304-.583-1.304-1.304V46.642c0-.72.584-1.304 1.304-1.304h5.044c.72 0 1.304.583 1.304 1.304V70.86zM49.97 39.933c-2.47 0-4.52-2.048-4.52-4.58 0-2.53 2.05-4.517 4.52-4.517 2.53 0 4.578 1.987 4.578 4.518 0 2.53-2.048 4.58-4.58 4.58z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider-header"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-heading"</span>&gt;</span>Presentation Details<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-details"</span>&gt;</span>
+                            You understand the need to change and some of your leadership team may even want to change. However, as we all know, there is a big gap between desire and action. Achieving accelerated growth in a way that is sustainable and scalable requires the right
+                            structure, systems, infrastructure (technology) and execution. In this session, Sam Dean will go beyond the concepts to provide practical insights on how to reconstruct your offering using the right technology with the right
+                            process to become a truly client-centric advice business (and along the way have a lot more fun). With real case studies and an action plan to take away, this is one session you can’t miss.
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-list-item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card t-background-light"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-header"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/350/265"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-price"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2"</span>&gt;</span>
+                    
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>Delegate Price $20<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-duration"</span>&gt;</span>
+                31.24
+              <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-heading t-text-main"</span>&gt;</span>What is inevitable about the future UTS Library?<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subheading t-text-secondary"</span>&gt;</span>Mal Booth, University Librarian, UTS<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-date t-text-secondary"</span>&gt;</span>
+              9/06/2017
+            <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-left"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button small"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-right"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M84.437 39.72H60.273V15.564c0-1-.812-1.812-1.812-1.813H41.537c-1 0-1.812.812-1.812 1.813v24.16h-24.16c-.96 0-1.812.85-1.813 1.812V58.46c0 .48.192.943.532 1.282.34.34.8.53 1.282.53h24.16v24.165c0 .48.19.942.53 1.282.34.34.803.53 1.283.53H58.46c.48 0 .943-.192 1.284-.533.338-.338.53-.8.53-1.28V60.273h24.162c.5 0 .953-.203 1.282-.53.33-.33.53-.783.53-1.284l.002-16.926c0-1-.81-1.812-1.813-1.813z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M50 12.5c-20.712 0-37.5 16.793-37.5 37.502C12.5 70.712 29.288 87.5 50 87.5s37.5-16.788 37.5-37.498C87.5 29.292 70.712 12.5 50 12.5zm3.826 58.36c0 .72-.584 1.304-1.304 1.304h-5.044c-.72 0-1.304-.583-1.304-1.304V46.642c0-.72.584-1.304 1.304-1.304h5.044c.72 0 1.304.583 1.304 1.304V70.86zM49.97 39.933c-2.47 0-4.52-2.048-4.52-4.58 0-2.53 2.05-4.517 4.52-4.517 2.53 0 4.578 1.987 4.578 4.518 0 2.53-2.048 4.58-4.58 4.58z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider-header"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-heading"</span>&gt;</span>Presentation Details<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-details"</span>&gt;</span>
+                            You understand the need to change and some of your leadership team may even want to change. However, as we all know, there is a big gap between desire and action. Achieving accelerated growth in a way that is sustainable and scalable requires the right
+                            structure, systems, infrastructure (technology) and execution. In this session, Sam Dean will go beyond the concepts to provide practical insights on how to reconstruct your offering using the right technology with the right
+                            process to become a truly client-centric advice business (and along the way have a lot more fun). With real case studies and an action plan to take away, this is one session you can’t miss.
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-list-item"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card t-background-light"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-header"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"http://fillmurray.com/330/264"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image-overlay"</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-price"</span>&gt;</span>
+                                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"h2"</span>&gt;</span>
+                    
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"label"</span>&gt;</span>Delegate Price $20<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-duration"</span>&gt;</span>
+                31.24
+              <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-heading t-text-main"</span>&gt;</span>Panel discussion: What does the future hold for the workforce learning profession?<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-subheading t-text-secondary"</span>&gt;</span>EduTECH 2017<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-date t-text-secondary"</span>&gt;</span>
+              9/06/2017
+            <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-left"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button small"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-footer-right"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M84.437 39.72H60.273V15.564c0-1-.812-1.812-1.812-1.813H41.537c-1 0-1.812.812-1.812 1.813v24.16h-24.16c-.96 0-1.812.85-1.813 1.812V58.46c0 .48.192.943.532 1.282.34.34.8.53 1.282.53h24.16v24.165c0 .48.19.942.53 1.282.34.34.803.53 1.283.53H58.46c.48 0 .943-.192 1.284-.533.338-.338.53-.8.53-1.28V60.273h24.162c.5 0 .953-.203 1.282-.53.33-.33.53-.783.53-1.284l.002-16.926c0-1-.81-1.812-1.813-1.813z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-button"</span> <span class="hljs-attr">data-toggle</span>=<span class="hljs-string">"slider"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string">"0 0 100 100"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">d</span>=<span class="hljs-string">"M50 12.5c-20.712 0-37.5 16.793-37.5 37.502C12.5 70.712 29.288 87.5 50 87.5s37.5-16.788 37.5-37.498C87.5 29.292 70.712 12.5 50 12.5zm3.826 58.36c0 .72-.584 1.304-1.304 1.304h-5.044c-.72 0-1.304-.583-1.304-1.304V46.642c0-.72.584-1.304 1.304-1.304h5.044c.72 0 1.304.583 1.304 1.304V70.86zM49.97 39.933c-2.47 0-4.52-2.048-4.52-4.58 0-2.53 2.05-4.517 4.52-4.517 2.53 0 4.578 1.987 4.578 4.518 0 2.53-2.048 4.58-4.58 4.58z"</span>/&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>more info<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-slider-header"</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"small-heading"</span>&gt;</span>Presentation Details<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-details"</span>&gt;</span>
+                            You understand the need to change and some of your leadership team may even want to change. However, as we all know, there is a big gap between desire and action. Achieving accelerated growth in a way that is sustainable and scalable requires the right
+                            structure, systems, infrastructure (technology) and execution. In this session, Sam Dean will go beyond the concepts to provide practical insights on how to reconstruct your offering using the right technology with the right
+                            process to become a truly client-centric advice business (and along the way have a lot more fun). With real case studies and an action plan to take away, this is one session you can’t miss.
+
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar-center"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"navigation"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Pagination"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination-previous disabled"</span>&gt;</span>Previous <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"current"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>You're on page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 4"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ellipsis"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 12"</span>&gt;</span>12<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 13"</span>&gt;</span>13<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination-next"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Next page"</span>&gt;</span>Next <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-300d4cd15a3ef5385f8093583f53871b-panel-view">
+    <code class="Code Code--lang-handlebars">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">
+  body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: "Lato", sans-serif;
+  }
+
+  .t-text-primary {
+    color: rgb(1, 132, 204);
+  }
+
+  .t-background-light {
+    background-color: #fff;
+    ;
+  }
+
+  .t-background {
+    background-color: #f3f3f3;
+  }
+
+  .t-text-main {
+    color: #272727;
+  }
+
+  .t-text-secondary {
+    color: #999;
+  }
+
+  .main-header {
+    padding-top: 0;
+  }
+
+  .t-background-nav {
+    background-color: #fff;
+    box-shadow: 0 0.15em 0.35em 0 rgba(0, 0, 0, 0.135);
+    border-bottom: 1px solid #ccc;
+  }
+
+  .t-background-top {
+    background: #f3f3f3 url(http://publicsectornetwork.com.au/wp-content/uploads/2017/03/PSN-Banner.jpg) no-repeat;
+    background-size: contain;
+  }
+
+  .masthead {
+    padding-top: 0.5rem;
+    width: 170px;
+  }
+
+  .nav-main-item {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.085em;
+    text-transform: uppercase;
+    height: 90px;
+    padding-top: 37px;
+    color: #999;
+    font-size: 11.5px;
+  }
+
+  .nav-main-item:hover {
+    box-shadow: inset 0 4px 0 0 rgb(1, 132, 204);
+    color: hsl(0, 0%, 0%);
+  }
+
+  .nav-main-item::after {
+    content: initial;
+  }
+
+  .button {
+    background-color: rgb(1, 132, 204);
+  }
+
+  .button:hover {
+    background-color: #004063;
+  }
+
+  .pagination .current {
+    background-color: rgb(1, 132, 204);
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"t-background-nav"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"main-header "</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"masthead"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://publicsectornetwork.com.au/wp-content/uploads/2017/01/PSN_Logo.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-variable">{{&gt; <a href="main-nav.html">@main-nav</a> }}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section t-background-top"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content"</span>&gt;</span>
+    </span><span class="hljs-template-variable">{{&gt; <a href="highlight-reel.html">@highlight-reel</a> }}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar-left"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"filter-list"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"filter-list-item filter-list-item--long"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"search"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"searchInput"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Search"</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"filter-list-item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">data-filter-multiple</span>=<span class="hljs-string">"true"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"-1"</span>&gt;</span>Expos<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"filter-list-item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">data-filter-multiple</span>=<span class="hljs-string">"true"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"-1"</span>&gt;</span>Conferences<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"filter-list-item"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">data-filter-multiple</span>=<span class="hljs-string">"true"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"-1"</span>&gt;</span>Types<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar-left"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"navigation"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Pagination"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination-previous disabled"</span>&gt;</span>Previous <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"current"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>You're on page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 4"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ellipsis"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 12"</span>&gt;</span>12<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 13"</span>&gt;</span>13<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination-next"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Next page"</span>&gt;</span>Next <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar-right"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"slSubCatalogues"</span> <span class="hljs-attr">data-filter-multiple</span>=<span class="hljs-string">"true"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"-1"</span>&gt;</span>Date: Most Recent<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </span><span class="hljs-template-variable">{{&gt; <a href="card-list.html">@card-list</a> }}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action-bar-center"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"navigation"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Pagination"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination-previous disabled"</span>&gt;</span>Previous <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"current"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>You're on page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 2"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 3"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 4"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ellipsis"</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 12"</span>&gt;</span>12<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Page 13"</span>&gt;</span>13<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"pagination-next"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Next page"</span>&gt;</span>Next <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"show-for-sr"</span>&gt;</span>page<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-300d4cd15a3ef5385f8093583f53871b-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre>{
+  <span class="hljs-attr">"catalogue_item"</span>: {
+    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+    <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+    <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/301/168"</span>,
+    <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"Physical education: under prioritised and our children pay the price"</span>,
+    <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"Anthony England, Director - Innovative Technologies, Pymble Ladies' College"</span>,
+    <span class="hljs-attr">"Cost"</span>: <span class="hljs-string">"$20.95"</span>,
+    <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+    <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+    <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+    <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+    <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+    <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+    <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+    <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"Presenters"</span>: [
+      {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+        <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+        <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+        <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+        <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+        <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+        <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+        <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+      }
+    ],
+    <span class="hljs-attr">"Tags"</span>: [
+      {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+        <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+        <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"this is a tag"</span>,
+        <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+      }
+    ],
+    <span class="hljs-attr">"CustomFields"</span>: [
+      {
+        <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+        <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+        <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Delegate Price"</span>,
+        <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-string">"$20"</span>,
+        <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+      }
+    ],
+    <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+    <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+    <span class="hljs-attr">"buttonLabel"</span>: <span class="hljs-string">"Add to Cart"</span>
+  },
+  <span class="hljs-attr">"highlight_reel"</span>: [
+    {
+      <span class="hljs-attr">"catalogue_item"</span>: {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+        <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+        <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/301/168"</span>,
+        <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"Darkingjung Barker: a lesson in closing the education gap"</span>,
+        <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"Phillip Heath, Head of Barker College, Barker College"</span>,
+        <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+        <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+        <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+        <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+        <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+        <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+        <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+        <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"Presenters"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+            <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+            <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+            <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+            <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+            <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+          }
+        ],
+        <span class="hljs-attr">"Tags"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"this is a tag"</span>,
+            <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+          }
+        ],
+        <span class="hljs-attr">"CustomFields"</span>: [
+          {
+            <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Delegate Price"</span>,
+            <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-string">"$20"</span>,
+            <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+          }
+        ],
+        <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"catalogue_item"</span>: {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+        <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+        <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/341/278"</span>,
+        <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"Clean Water for every child, benefits all"</span>,
+        <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"Rez Haremi, EssentialNeed.org"</span>,
+        <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+        <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+        <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+        <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+        <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+        <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+        <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+        <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"Presenters"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+            <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+            <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+            <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+            <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+            <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+          }
+        ],
+        <span class="hljs-attr">"Tags"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"this is a tag"</span>,
+            <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+          }
+        ],
+        <span class="hljs-attr">"CustomFields"</span>: [
+          {
+            <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Delegate Price"</span>,
+            <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-string">"$20"</span>,
+            <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+          }
+        ],
+        <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"catalogue_item"</span>: {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+        <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+        <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/300/165"</span>,
+        <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"Physical education: under prioritised and our children pay the price"</span>,
+        <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"Prof. Richard Telford, AM, Lifestyle of our Kids (LOOK)"</span>,
+        <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+        <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+        <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+        <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+        <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+        <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+        <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+        <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"Cost"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">"Presenters"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+            <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+            <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+            <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+            <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+            <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+          }
+        ],
+        <span class="hljs-attr">"Tags"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"free"</span>,
+            <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+          }
+        ],
+        <span class="hljs-attr">"CustomFields"</span>: [
+          {
+            <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Free to View"</span>,
+            <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+          }
+        ],
+        <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"buttonLabel"</span>: <span class="hljs-string">"Watch Now"</span>
+      }
+    }
+  ],
+  <span class="hljs-attr">"catalogue_items"</span>: [
+    {
+      <span class="hljs-attr">"catalogue_item"</span>: {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+        <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+        <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/301/168"</span>,
+        <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"Darkingjung Barker: a lesson in closing the education gap"</span>,
+        <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"Phillip Heath, Head of Barker College, Barker College"</span>,
+        <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+        <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+        <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+        <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+        <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+        <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+        <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+        <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"Presenters"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+            <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+            <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+            <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+            <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+            <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+          }
+        ],
+        <span class="hljs-attr">"Tags"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"this is a tag"</span>,
+            <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+          }
+        ],
+        <span class="hljs-attr">"CustomFields"</span>: [
+          {
+            <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Delegate Price"</span>,
+            <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-string">"$20"</span>,
+            <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+          }
+        ],
+        <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"catalogue_item"</span>: {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+        <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+        <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/341/278"</span>,
+        <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"Clean Water for every child, benefits all"</span>,
+        <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"Rez Haremi, EssentialNeed.org"</span>,
+        <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+        <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+        <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+        <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+        <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+        <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+        <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+        <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"Presenters"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+            <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+            <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+            <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+            <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+            <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+          }
+        ],
+        <span class="hljs-attr">"Tags"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"this is a tag"</span>,
+            <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+          }
+        ],
+        <span class="hljs-attr">"CustomFields"</span>: [
+          {
+            <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Delegate Price"</span>,
+            <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-string">"$20"</span>,
+            <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+          }
+        ],
+        <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"catalogue_item"</span>: {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+        <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+        <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/300/165"</span>,
+        <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"Physical education: under prioritised and our children pay the price"</span>,
+        <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"Prof. Richard Telford, AM, Lifestyle of our Kids (LOOK)"</span>,
+        <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+        <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+        <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+        <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+        <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+        <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+        <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+        <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"Cost"</span>: <span class="hljs-literal">null</span>,
+        <span class="hljs-attr">"Presenters"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+            <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+            <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+            <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+            <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+            <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+          }
+        ],
+        <span class="hljs-attr">"Tags"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"free"</span>,
+            <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+          }
+        ],
+        <span class="hljs-attr">"CustomFields"</span>: [
+          {
+            <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Free to View"</span>,
+            <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+          }
+        ],
+        <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"buttonLabel"</span>: <span class="hljs-string">"Watch Now"</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"catalogue_item"</span>: {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+        <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+        <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/301/169"</span>,
+        <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"Solving problems that Matter with future-focused learning"</span>,
+        <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"Lee Crockett, President, Global Digital Citizen Foundation"</span>,
+        <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+        <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+        <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+        <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+        <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+        <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+        <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+        <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"Presenters"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+            <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+            <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+            <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+            <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+            <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+          }
+        ],
+        <span class="hljs-attr">"Tags"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"this is a tag"</span>,
+            <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+          }
+        ],
+        <span class="hljs-attr">"CustomFields"</span>: [
+          {
+            <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Delegate Price"</span>,
+            <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-string">"$20"</span>,
+            <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+          }
+        ],
+        <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"catalogue_item"</span>: {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+        <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+        <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/302/185"</span>,
+        <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"A matter of difference: How to foster Inclusion"</span>,
+        <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"Najla Turk, Diversity and Inclusion Consultant, ConnEQt"</span>,
+        <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+        <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+        <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+        <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+        <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+        <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+        <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+        <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"Presenters"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+            <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+            <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+            <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+            <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+            <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+          }
+        ],
+        <span class="hljs-attr">"Tags"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"this is a tag"</span>,
+            <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+          }
+        ],
+        <span class="hljs-attr">"CustomFields"</span>: [
+          {
+            <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Delegate Price"</span>,
+            <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-string">"$20"</span>,
+            <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+          }
+        ],
+        <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"catalogue_item"</span>: {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+        <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+        <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/350/265"</span>,
+        <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"What is inevitable about the future UTS Library?"</span>,
+        <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"Mal Booth, University Librarian, UTS"</span>,
+        <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+        <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+        <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+        <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+        <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+        <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+        <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+        <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"Presenters"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+            <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+            <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+            <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+            <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+            <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+          }
+        ],
+        <span class="hljs-attr">"Tags"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"this is a tag"</span>,
+            <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+          }
+        ],
+        <span class="hljs-attr">"CustomFields"</span>: [
+          {
+            <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Delegate Price"</span>,
+            <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-string">"$20"</span>,
+            <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+          }
+        ],
+        <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>
+      }
+    },
+    {
+      <span class="hljs-attr">"catalogue_item"</span>: {
+        <span class="hljs-attr">"id"</span>: <span class="hljs-string">"323414124"</span>,
+        <span class="hljs-attr">"CatalogueId"</span>: <span class="hljs-string">"124114141"</span>,
+        <span class="hljs-attr">"ThumbnailUrl"</span>: <span class="hljs-string">"http://fillmurray.com/330/264"</span>,
+        <span class="hljs-attr">"Title"</span>: <span class="hljs-string">"Panel discussion: What does the future hold for the workforce learning profession?"</span>,
+        <span class="hljs-attr">"Description"</span>: <span class="hljs-string">"EduTECH 2017"</span>,
+        <span class="hljs-attr">"PlayUrl"</span>: <span class="hljs-string">"http://play.me"</span>,
+        <span class="hljs-attr">"Duration"</span>: <span class="hljs-number">31.24</span>,
+        <span class="hljs-attr">"Presenter"</span>: <span class="hljs-string">"Anthony England"</span>,
+        <span class="hljs-attr">"RecordDate"</span>: <span class="hljs-string">"9/06/2017"</span>,
+        <span class="hljs-attr">"Timezone"</span>: <span class="hljs-string">"AUSEDT"</span>,
+        <span class="hljs-attr">"Status"</span>: <span class="hljs-string">"AddedToCart"</span>,
+        <span class="hljs-attr">"Type"</span>: <span class="hljs-string">"CatalogueItem"</span>,
+        <span class="hljs-attr">"IsInPlaylist"</span>: <span class="hljs-literal">true</span>,
+        <span class="hljs-attr">"Presenters"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"23235235"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Prefix"</span>: <span class="hljs-string">"Mr"</span>,
+            <span class="hljs-attr">"FirstName"</span>: <span class="hljs-string">"Anthony"</span>,
+            <span class="hljs-attr">"MiddleName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"LastName"</span>: <span class="hljs-string">"England"</span>,
+            <span class="hljs-attr">"Email"</span>: <span class="hljs-string">"a@email.com.au"</span>,
+            <span class="hljs-attr">"BioUrl"</span>: <span class="hljs-string">"http://bio.com"</span>,
+            <span class="hljs-attr">"AdditionalInfo"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"DisplayName"</span>: <span class="hljs-literal">null</span>,
+            <span class="hljs-attr">"Order"</span>: <span class="hljs-number">1</span>,
+            <span class="hljs-attr">"ImageUrl"</span>: <span class="hljs-string">"http://fillmurray.com/150/150"</span>
+          }
+        ],
+        <span class="hljs-attr">"Tags"</span>: [
+          {
+            <span class="hljs-attr">"id"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"Tag"</span>: <span class="hljs-string">"this is a tag"</span>,
+            <span class="hljs-attr">"DomainId"</span>: <span class="hljs-string">"525235"</span>
+          }
+        ],
+        <span class="hljs-attr">"CustomFields"</span>: [
+          {
+            <span class="hljs-attr">"FieldDefinitionId"</span>: <span class="hljs-string">"42324"</span>,
+            <span class="hljs-attr">"MediaSiteId"</span>: <span class="hljs-string">"525235"</span>,
+            <span class="hljs-attr">"FieldName"</span>: <span class="hljs-string">"Delegate Price"</span>,
+            <span class="hljs-attr">"FieldLabel"</span>: <span class="hljs-string">"$20"</span>,
+            <span class="hljs-attr">"DataType"</span>: <span class="hljs-literal">null</span>
+          }
+        ],
+        <span class="hljs-attr">"PodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>,
+        <span class="hljs-attr">"VodcastUrl"</span>: <span class="hljs-string">"http://itunes.com/rss"</span>
+      }
+    }
+  ]
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-300d4cd15a3ef5385f8093583f53871b-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@theme-example</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/theme-example.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/theme-example.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">components/templates/theme-example/theme-example.hbs</span>
+        </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(3)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="main-nav.html">@<span>main-nav</span></a>, 
+            
+                <a href="highlight-reel.html">@<span>highlight-reel</span></a>, 
+            
+                <a href="card-list.html">@<span>card-list</span></a>
+            
+            </span>
+        </li class="Meta-item">
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-300d4cd15a3ef5385f8093583f53871b-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p>This shows an example of a themed template</p>
+
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-base">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Base</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-global">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Global</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="colors.html" data-pjax>
+                <span>Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-text">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Text</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="headings.html" data-pjax>
+                <span>Headings</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="paragraph.html" data-pjax>
+                <span>Paragraph</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="blockquote.html" data-pjax>
+                <span>Blockquote</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="inline-elements.html" data-pjax>
+                <span>Inline Elements</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="time.html" data-pjax>
+                <span>Time</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-lists">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Lists</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="unordered.html" data-pjax>
+                <span>Unordered</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="ordered.html" data-pjax>
+                <span>Ordered</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-controls">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Controls</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button.html" data-pjax>
+                <span>Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button-variants.html" data-pjax>
+                <span>Button Variants</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="icon-button.html" data-pjax>
+                <span>Icon Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-labels">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Labels</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="label.html" data-pjax>
+                <span>Label</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-cards">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Cards</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="card-image.html" data-pjax>
+                <span>Card Image</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="full-card.html" data-pjax>
+                <span>Full Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="hero-card.html" data-pjax>
+                <span>Hero Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="thumbnail-card.html" data-pjax>
+                <span>Thumbnail Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-navigation">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Navigation</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="main-nav.html" data-pjax>
+                <span>Main Nav</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="pagination.html" data-pjax>
+                <span>Pagination</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-patterns">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Patterns</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="card-list.html" data-pjax>
+                <span>Card List</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="highlight-reel.html" data-pjax>
+                <span>Highlight Reel</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-templates">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Templates</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="main.html" data-pjax>
+                <span>Main</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Theme Example</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

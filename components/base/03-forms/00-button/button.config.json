@@ -1,0 +1,56 @@
+{
+  "context": {
+    "url": "#",
+    "cta": "button"
+  },
+  "variants": [
+    {
+      "name": "tiny",
+      "context": {
+        "modifier": "tiny",
+        "url": "#",
+        "cta": "tiny button"
+      }
+    },
+    {
+      "name": "small",
+      "context": {
+        "modifier": "small",
+        "url": "#",
+        "cta": "small button"
+      }
+    },
+    {
+      "name": "large",
+      "context": {
+        "modifier": "large",
+        "url": "#",
+        "cta": "large button"
+      }
+    },
+    {
+      "name": "expanded",
+      "context": {
+        "modifier": "expanded",
+        "url": "#",
+        "cta": "expanded button"
+      }
+    },
+    {
+      "name": "success",
+      "context": {
+        "modifier": "success",
+        "url": "#",
+        "cta": "success button"
+      }
+    },
+    {
+      "name": "alert",
+      "context": {
+        "modifier": "alert",
+        "url": "#",
+        "cta": "alert button"
+      }
+    }
+  ]
+}

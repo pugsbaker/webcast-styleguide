@@ -3,9 +3,10 @@ title: WebcastTV Component Library
 ---
 
 
-## Installation
+## Using these components
 
 Include `build/css/style.css` in the head the site.
+Copy and Pasting component views is the only way at the moment
 
 ## Foundation Framework
 

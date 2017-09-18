@@ -81,6 +81,17 @@ fractal.docs.set('path', `${__dirname}/docs`); // location of the documentation 
 fractal.components.set('path', `${__dirname}/components`); // location of the component directory.
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 
+const mandelbrot = require('@frctl/mandelbrot'); // require the Mandelbrot theme module
+
+// create a new instance with custom config options
+const myCustomisedTheme = mandelbrot({
+    skin: "teal",
+    "nav": ["docs", "components"] // show docs above components in the sidebar
+    // any other theme configuration values here
+});
+
+fractal.web.theme(myCustomisedTheme); 
+
 // any other configuration or customisation here
 
 const logger = fractal.cli.console; // keep a reference to the fractal CLI console utility

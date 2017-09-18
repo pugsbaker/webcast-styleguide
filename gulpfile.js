@@ -37,6 +37,19 @@ gulp.task("sass", function() {
     .pipe(gulp.dest(path.resolve("./source/css/")));
 });
 
+// SASS Compilation
+gulp.task("sass:production", function() {
+  return gulp
+    .src(path.resolve("./source/css/", "sass/**/*.scss"))
+    .pipe(
+      sass({
+        includePaths: ["node_modules/foundation-sites/scss"],
+        outputStyle: 'compressed'
+      }).on("error", sass.logError)
+    )
+    .pipe(gulp.dest(path.resolve("./source/css/")));
+});
+
 // CSS Copy
 gulp.task("copy:css", function() {
   return gulp
@@ -61,6 +74,14 @@ gulp.task(
   "assets",
   gulp.series(
     "sass",
+    "copy:css",
+  )
+);
+
+gulp.task(
+  "assets:production",
+  gulp.series(
+    "sass:production",
     "copy:css",
   )
 );
@@ -136,5 +157,5 @@ gulp.task('fractal:build', function(){
 });
 
 gulp.task("default", gulp.series("assets", "fractal:start"));
-gulp.task("build", gulp.series("assets", "fractal:build"));
+gulp.task("build", gulp.series("assets:production", "fractal:build"));
 gulp.task("deploy", gulp.series("assets", "fractal:build", "deploy"));

@@ -1,0 +1,63 @@
+<header class="t-background-top">
+  <div class="main-header">
+    <div class="masthead">
+      <a href="/"><img src="http://register.webcastcloud.com.au/smithink/VideoChannel/smithink-logo-header.png" alt="" class="logo"></a>
+    </div>
+    {{> @main-nav }}
+  </div>
+</header>
+
+<section class="section t-background-top">
+  <div class="content">
+    {{> @highlight-reel }}
+  </div>
+</section>
+<section class="section">
+  <div class="content">
+    <div class="action-bar">
+      <div class="action-bar-left">
+        <h2 class="category-heading">Category One</h2>
+      </div>
+      <div class="action-bar-right">
+        <a href="" class="button small">view all</a>
+      </div>
+    </div>
+    <ul class="card-list card-list--single-row">
+      {{#catalogue_items}}
+        <li class="card-list-item">
+          {{> @thumbnail-card }}
+        </li>
+      {{/catalogue_items}}
+    </ul>
+     <div class="action-bar">
+      <div class="action-bar-left">
+        <h2 class="category-heading">Category One</h2>
+      </div>
+      <div class="action-bar-right">
+        <a href="" class="button small">view all</a>
+      </div>
+    </div>
+    <ul class="card-list card-list--single-row">
+      {{#catalogue_items}}
+        <li class="card-list-item">
+          {{> @thumbnail-card }}
+        </li>
+      {{/catalogue_items}}
+    </ul>
+    <div class="action-bar">
+      <div class="action-bar-left">
+        <h2 class="category-heading">Category One</h2>
+      </div>
+      <div class="action-bar-right">
+        <a href="" class="button small">view all</a>
+      </div>
+    </div>
+    <ul class="card-list card-list--single-row">
+      {{#catalogue_items}}
+        <li class="card-list-item">
+          {{> @thumbnail-card }}
+        </li>
+      {{/catalogue_items}}
+    </ul>
+  </div>
+</section>

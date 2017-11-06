@@ -11,7 +11,13 @@
       "context": {
         "modifier": "card-list--small"
       }
-  }
+  },
+  {
+    "name": "single-row",
+    "context": {
+      "modifier": "card-list--single-row"
+    }
+}
 ],
   "context": {
     "catalogue_items": [

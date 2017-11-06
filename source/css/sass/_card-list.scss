@@ -31,6 +31,17 @@
   }
 }
 
+.card-list--single-row {
+  .card-list-item {
+    flex: 1 0 325px;
+    .thumbnail-card {
+      width: 325px;
+      margin-right: 0.5rem;
+    }
+  }
+  
+}
+
 .card-list {
   display: grid;
   grid-gap: 1rem;
@@ -41,6 +52,18 @@
   }
   &.card-list--small {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  &.card-list--single-row {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-y: auto;
+    scroll-snap-type: mandatory;
+    
+      /* older spec implementation */
+      scroll-snap-destination: 0% 325px;
+      scroll-snap-points-x: repeat(325px);
   }
 }
 

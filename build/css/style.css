@@ -567,7 +567,11 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 1rem; }
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
   .action-bar + .action-bar {
     padding-top: 0; }
 
@@ -817,6 +821,9 @@ time {
   font-size: 0.8em;
   text-transform: uppercase;
   font-weight: 800; }
+
+.category-heading {
+  margin: 0; }
 
 select {
   height: 2.4375rem;
@@ -1553,6 +1560,14 @@ a.button:hover, a.button:focus {
   min-width: 200px;
   max-width: 450px; }
 
+.card-list--single-row .card-list-item {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 325px;
+  flex: 1 0 325px; }
+  .card-list--single-row .card-list-item .thumbnail-card {
+    width: 325px;
+    margin-right: 0.5rem; }
+
 .card-list {
   display: grid;
   grid-gap: 1rem;
@@ -1561,6 +1576,24 @@ a.button:hover, a.button:focus {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); }
   .card-list.card-list--small {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .card-list.card-list--single-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    /* older spec implementation */
+    -webkit-scroll-snap-destination: 0% 325px;
+    -ms-scroll-snap-destination: 0% 325px;
+    scroll-snap-destination: 0% 325px;
+    -webkit-scroll-snap-points-x: repeat(325px);
+    -ms-scroll-snap-points-x: repeat(325px);
+    scroll-snap-points-x: repeat(325px); }
 
 @supports (display: grid) {
   .card-list-item.card-list-item {

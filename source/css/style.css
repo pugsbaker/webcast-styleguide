@@ -527,7 +527,6 @@ ul {
 
 .content {
   padding: 1rem;
-  max-width: 90rem;
   margin: 0 auto; }
   @media print, screen and (min-width: 40em) {
     .content {
@@ -535,7 +534,6 @@ ul {
 
 .main-header {
   padding: 3rem 1rem 0;
-  max-width: 90rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

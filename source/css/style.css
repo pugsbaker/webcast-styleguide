@@ -1259,8 +1259,8 @@ a.button:hover, a.button:focus {
   font-size: 0.65rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 0.25rem 0.5rem;
-  border: 2px solid currentColor;
+  padding: 0.16667rem 0.5rem;
+  border: 1px solid currentColor;
   border-radius: 3px; }
 
 .card {
@@ -1343,8 +1343,8 @@ a.button:hover, a.button:focus {
     z-index: 0; }
   .card-image .card-duration {
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0.66667rem;
+    right: 0.66667rem;
     color: #fff;
     font-size: 0.7rem;
     font-weight: bold;
@@ -1356,7 +1356,7 @@ a.button:hover, a.button:focus {
   left: 0;
   right: 0;
   top: 0;
-  padding: 1rem;
+  padding: 0.66667rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -1369,7 +1369,7 @@ a.button:hover, a.button:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 1rem;
+  padding: 0.66667rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -1475,7 +1475,8 @@ a.button:hover, a.button:focus {
       display: flex; } }
 
 .highlight-reel-feature {
-  flex: 3.1; }
+  flex: 3.1;
+  max-width: 80rem; }
 
 .highlight-reel-list {
   flex: 1;
@@ -1483,7 +1484,10 @@ a.button:hover, a.button:focus {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin: 0.5rem 0 0 0; }
+  align-content: flex-start;
+  max-height: 720px;
+  margin: 0.5rem 0 0 0;
+  overflow-x: auto; }
   @media screen and (min-width: 65em) {
     .highlight-reel-list {
       margin: 0 0 0 0.5rem; } }
@@ -1504,6 +1508,12 @@ a.button:hover, a.button:focus {
       flex-basis: 100%; }
       .highlight-reel-list-item:not(:last-child) {
         margin: 0 0 0.5rem 0; } }
+  @media screen and (min-width: 120em) {
+    .highlight-reel-list-item {
+      flex-basis: 49%;
+      flex-grow: 0; }
+      .highlight-reel-list-item:nth-child(odd) {
+        margin: 0 0.5rem 0 0; } }
 
 .filter-list {
   list-style: none;

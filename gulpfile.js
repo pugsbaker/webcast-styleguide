@@ -65,6 +65,10 @@ gulp.task("copy:css", function() {
     .pipe(gulp.dest(normalizePath("./public/css/")))
 });
 
+gulp.task('watch', function(){
+  gulp.watch('source/css/sass/**/*.scss', gulp.series("assets")); 
+})
+
 gulp.task('deploy', function() {
   return gulp.src(normalizePath("./build/") + "/**/*")
     .pipe(ghPages());
@@ -156,6 +160,6 @@ gulp.task('fractal:build', function(){
     });
 });
 
-gulp.task("default", gulp.series("assets", "fractal:start"));
+gulp.task("default", gulp.series("assets", "fractal:start", "watch"));
 gulp.task("build", gulp.series("assets:production", "fractal:build"));
 gulp.task("deploy", gulp.series("assets", "fractal:build", "deploy"));

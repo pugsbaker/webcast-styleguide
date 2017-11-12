@@ -3,12 +3,15 @@
     display: flex;
   }
 
+ 
   padding-bottom: 1.5rem;
   border-bottom: 0.75rem solid $color-border;
+
 }
 
 .highlight-reel-feature {
   flex: 3.1;
+  max-width: 80rem;
 }
 
 .highlight-reel-list {
@@ -17,12 +20,34 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  
+  // align-items: flex-start;
+  align-content: flex-start;
+  max-height: 720px;
   margin: 0.5rem 0 0 0;
-  
+  overflow-x: auto;
+
   @media screen and (min-width: 65em) {
-    margin: 0 0 0 0.5rem;
+      margin: 0 0 0 0.5rem;
   }
+
+  // display: grid;
+  // grid-template-columns: repeat(1, 1fr);
+  // grid-gap: 0.5rem;
+  // align-content: start;
+
+  
+  
+  // @media screen and (min-width: 40em) {
+  //   grid-template-columns: repeat(3, 1fr);
+  // }
+
+  // @media screen and (min-width: 65em) {
+  //   margin: 0 0 0 0.5rem;
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+  // @media screen and (min-width: 112.5em) {
+  //   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  // }
 }
 
 .highlight-reel-list-item {
@@ -31,6 +56,7 @@
   &:not(:last-child) {
     margin: 0 0 0.5rem 0;
   }
+  
   flex-basis: 100%;
 
   @media screen and (min-width: 40em) {
@@ -47,6 +73,13 @@
     }
   }
 
-
-
+  @media screen and (min-width: 120em) {
+    flex-basis: 49%;
+    flex-grow: 0;
+    &:nth-child(odd) {
+      margin: 0 0.5rem 0 0;
+    }
+   
+  }
+  // margin: 0 !important;
 }

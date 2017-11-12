@@ -99,8 +99,8 @@
 
   .card-duration {
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: $spacing/1.5+rem;
+    right: $spacing/1.5+rem;
     color: $color-white;
     font-size: 0.7rem;
     font-weight: bold;
@@ -114,7 +114,7 @@
   left: 0;
   right: 0;
   top: 0;
-  padding: $spacing+rem;
+  padding: $spacing/1.5+rem;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -128,7 +128,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: $spacing+rem;
+  padding: $spacing/1.5+rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;

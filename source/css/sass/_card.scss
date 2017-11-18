@@ -88,6 +88,10 @@
   padding-bottom: 56.25%; // 16.9 ratio
   overflow: hidden;
 
+  .hero-tile & {
+    padding-bottom: 57.83%;
+  }
+
   > img {
     position: absolute;
     top: 0;
@@ -95,6 +99,8 @@
     right: 0;
     bottom: 0;
     z-index: 0;
+    max-width: 110%;
+    width: 110%;
   }
 
   .card-duration {

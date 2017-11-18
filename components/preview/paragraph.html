@@ -12,5 +12,25 @@
 
 <p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+  crossorigin="anonymous"></script>
+  <script>
+    $('[data-toggle]').click(function() {
+      console.log('open', $(this).closest('.card'));
+      $(this).closest('.card').find('.card-slider').toggleClass('is-open');
+    })
+    $('.card-slider').click(function() {
+      $(this).toggleClass('is-open');
+    })
+    $('.nav-main-toggle').click(function(){
+         $(this).siblings('.nav-main-panel').toggleClass('is-open');
+    })
+     $('.nav-main-close').click(function(){
+         $(this).parents('.nav-main-panel').toggleClass('is-open');
+    })
+
+  </script>
 </body>
 </html>

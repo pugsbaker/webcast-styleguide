@@ -946,19 +946,45 @@ input[type='search'] {
   margin-left: 0.5rem;
   content: '\00bb'; }
 
-.nav-main {
+@media screen and (max-width: 40em) {
+  .nav-main-panel {
+    background: #0CA8A0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    min-width: 300px;
+    z-index: 1000;
+    transform: translateX(100%); }
+    .nav-main-panel.is-open {
+      transform: translateX(0);
+      transition: transform 0.3s cubic-bezier(0.41, 0.05, 0.66, 0.91); } }
+
+.nav-main-panel-header {
+  padding: 1rem; }
+  @media screen and (min-width: 40em) {
+    .nav-main-panel-header {
+      display: none; } }
+
+@media screen and (min-width: 40em) {
+  .nav-main-toggle {
+    display: none; } }
+
+.nav-main-list {
   flex: 1;
   flex-basis: 100%;
   margin: 0;
   padding: 0;
   list-style: none; }
-  .nav-main > li {
-    display: inline-block;
+  .nav-main-list > li {
     margin: 0;
     padding: 0; }
   @media screen and (min-width: 40em) {
-    .nav-main {
-      flex: 1; } }
+    .nav-main-list {
+      flex: 1; }
+      .nav-main-list > li {
+        display: inline-block; } }
 
 .nav-main-item {
   display: block;
@@ -1474,7 +1500,8 @@ a.button:hover, a.button:focus {
 .highlight-reel-grid {
   margin: 0;
   padding-bottom: 1.5rem;
-  border-bottom: 0.75rem solid rgba(0, 0, 0, 0.25); }
+  border-bottom: 0.75rem solid rgba(0, 0, 0, 0.25);
+  border-bottom-color: var(--color-border, rgba(0, 0, 0, 0.25)); }
   .highlight-reel-grid::before, .highlight-reel-grid::after {
     display: table;
     content: ' ';
@@ -1537,9 +1564,7 @@ a.button:hover, a.button:focus {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-template-rows: repeat(3, 1fr);
-    grid-gap: 0.3rem 0.6rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 0.75rem solid rgba(0, 0, 0, 0.25); }
+    grid-gap: 0.3rem 0.6rem; }
     @media screen and (min-width: 100em) {
       .highlight-reel-grid {
         grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); } }

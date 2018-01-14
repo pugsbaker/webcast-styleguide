@@ -2716,6 +2716,7 @@ a.button:hover, a.button:focus {
   left: 0;
   right: 0;
   top: 0;
+  z-index: 1;
   padding: 0.66667rem;
   display: flex;
   align-items: flex-start;
@@ -2735,6 +2736,10 @@ a.button:hover, a.button:focus {
   justify-content: space-between;
   color: #fff;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 60%); }
+
+.thumbnail-card-tools {
+  flex: 1;
+  text-align: right; }
 
 .hero-details {
   display: flex;

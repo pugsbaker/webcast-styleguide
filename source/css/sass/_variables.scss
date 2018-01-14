@@ -37,3 +37,16 @@ $body-font-family: "proxima-nova", helvetica, arial, sans-serif;
     clear: both;
   }
 }
+
+@mixin variable($property, $variable, $fallback) {
+  #{$property}: $fallback;
+  #{$property}: var($variable, $fallback);
+}
+
+:root {
+  --color-background-light: $color-background-light;
+  --color-background: $color-background;
+  --color-primary: $color-primary;
+  --color-text:$color-text;
+  --color-text-light:$color-text-light;
+}

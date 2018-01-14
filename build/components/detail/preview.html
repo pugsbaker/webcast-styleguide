@@ -165,6 +165,22 @@
 
 <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
 
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-3.2.1.slim.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        $(<span class="hljs-string">'[data-toggle]'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'open'</span>, $(<span class="hljs-keyword">this</span>).closest(<span class="hljs-string">'.card'</span>));
+            $(<span class="hljs-keyword">this</span>).closest(<span class="hljs-string">'.card'</span>).find(<span class="hljs-string">'.card-slider'</span>).toggleClass(<span class="hljs-string">'is-open'</span>);
+        })
+        $(<span class="hljs-string">'.card-slider'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            $(<span class="hljs-keyword">this</span>).toggleClass(<span class="hljs-string">'is-open'</span>);
+        })
+        $(<span class="hljs-string">'.nav-main-toggle'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            $(<span class="hljs-keyword">this</span>).siblings(<span class="hljs-string">'.nav-main-panel'</span>).toggleClass(<span class="hljs-string">'is-open'</span>);
+        })
+        $(<span class="hljs-string">'.nav-main-close'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            $(<span class="hljs-keyword">this</span>).parents(<span class="hljs-string">'.nav-main-panel'</span>).toggleClass(<span class="hljs-string">'is-open'</span>);
+        })
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre>
@@ -187,6 +203,26 @@
 
 </span><span class="hljs-template-variable">{{{ <span class="hljs-builtin-name">yield</span> }}</span><span class="xml">}
 
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-3.2.1.slim.js"</span>
+  <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="</span>
+  <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    $(<span class="hljs-string">'[data-toggle]'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'open'</span>, $(<span class="hljs-keyword">this</span>).closest(<span class="hljs-string">'.card'</span>));
+      $(<span class="hljs-keyword">this</span>).closest(<span class="hljs-string">'.card'</span>).find(<span class="hljs-string">'.card-slider'</span>).toggleClass(<span class="hljs-string">'is-open'</span>);
+    })
+    $(<span class="hljs-string">'.card-slider'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      $(<span class="hljs-keyword">this</span>).toggleClass(<span class="hljs-string">'is-open'</span>);
+    })
+    $(<span class="hljs-string">'.nav-main-toggle'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+         $(<span class="hljs-keyword">this</span>).siblings(<span class="hljs-string">'.nav-main-panel'</span>).toggleClass(<span class="hljs-string">'is-open'</span>);
+    })
+     $(<span class="hljs-string">'.nav-main-close'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+         $(<span class="hljs-keyword">this</span>).parents(<span class="hljs-string">'.nav-main-panel'</span>).toggleClass(<span class="hljs-string">'is-open'</span>);
+    })
+
+  </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></pre>
     </code>
@@ -1278,8 +1314,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="highlight-reel.html" data-pjax>
-                <span>Highlight Reel</span>
+            <a class="Tree-entityLink" href="highlight-reel-grid.html" data-pjax>
+                <span>Highlight Reel Grid</span>
                 
 
 <div class="Status Status--unlabelled">

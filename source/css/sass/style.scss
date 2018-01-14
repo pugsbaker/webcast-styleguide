@@ -1,5 +1,6 @@
 @import "variables";
 @import "foundation";
+@import "flag-icon";
 @import "global";
 @import "typography";
 
@@ -22,35 +23,35 @@ $input-margin: 0;
 
 
 .t-text-primary {
-  color: $color-primary;
+  @include variable(color, --color-primary, $color-primary);
 }
 
 .t-background-top {
-  background-color: $color-primary;
+  @include variable(background-color, --color-primary, $color-primary);
 }
 
 .t-background-nav {
-  background-color: $color-primary;
+  @include variable(background-color, --color-primary, $color-primary);
 }
 
 .t-background-light {
-  background-color: $color-background-light;
+  @include variable(background-color, --color-background-light, $color-background-light);
 }
 
 .t-background {
-  background-color: $color-background;
+  @include variable(background-color, --color-background, $color-background);
 }
 
 .t-text-main {
-  color: $color-text;
+  @include variable(color, --color-text, $color-text);
 }
 
 .t-text-secondary {
-  color: $color-text-light;
+  @include variable(color, --color-text-light, $color-text-light);
 }
 
 .nav-main-item {
-  color: $color-white;
+  color: $color-text;
 
   &:hover {
     color: $color-text;

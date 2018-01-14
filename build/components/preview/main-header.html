@@ -15,15 +15,55 @@
     <div class="masthead">
       <a href="/"><img src="http://register.webcastcloud.com.au/smithink/VideoChannel/smithink-logo-header.png" alt="" class="logo"></a>
     </div>
-    <nav>
-      <ul class="nav-main">
-        <li><a class="nav-main-item" href="">help</a></li>
-        <li><a class="nav-main-item" href="">cart</a></li>
-        <li><a class="nav-main-item" href="">register</a></li>
-        <li><a class="nav-main-item" href="">log in</a></li>
-      </ul>
+    <nav class="nav-main">
+      <button class="nav-main-toggle">
+        Menu
+      </button>
+      <div class="nav-main-panel">
+        <div class="nav-main-panel-header">
+          <button class="nav-main-close">
+            Close
+          </button>
+        </div>
+    
+        <ul class="nav-main-list">
+          <li>
+            <a class="nav-main-item" href="">help</a>
+          </li>
+          <li>
+            <a class="nav-main-item" href="">cart</a>
+          </li>
+          <li>
+            <a class="nav-main-item" href="">register</a>
+          </li>
+          <li>
+            <a class="nav-main-item" href="">log in</a>
+          </li>
+        </ul>
+      </div>
+    
     </nav>  </div>
 </header>
 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+  crossorigin="anonymous"></script>
+  <script>
+    $('[data-toggle]').click(function() {
+      console.log('open', $(this).closest('.card'));
+      $(this).closest('.card').find('.card-slider').toggleClass('is-open');
+    })
+    $('.card-slider').click(function() {
+      $(this).toggleClass('is-open');
+    })
+    $('.nav-main-toggle').click(function(){
+         $(this).siblings('.nav-main-panel').toggleClass('is-open');
+    })
+     $('.nav-main-close').click(function(){
+         $(this).parents('.nav-main-panel').toggleClass('is-open');
+    })
+
+  </script>
 </body>
 </html>

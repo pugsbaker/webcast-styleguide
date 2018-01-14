@@ -13,13 +13,17 @@ $button-radius: 3px;
   width: 1.75rem;
   height: 1.75rem;
   display: inline;
-
+  color: $color-text-light;
+  padding: 0.1rem;
   svg {
     width: 100%;
-    fill: $color-text-light;
+  }
 
-    &:hover {
-      fill: $color-primary;
-    }
+  &:hover {
+    color: $color-primary;
+  }
+
+  &:not(:last-child) {
+    margin-right: 0.25rem;
   }
 }

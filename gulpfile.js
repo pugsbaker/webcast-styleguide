@@ -6,7 +6,9 @@ sass = require("gulp-sass"),
 postcss = require("gulp-postcss"),
 ghPages = require('gulp-gh-pages'),
 autoprefixer = require("autoprefixer"), 
-chalk = require("chalk");
+chalk = require("chalk"),
+svgstore = require('gulp-svgstore'),
+svgmin = require('gulp-svgmin');
 
 /**
  * Normalize all paths to be plain, paths with no leading './',
@@ -31,7 +33,7 @@ gulp.task("sass", function() {
     .src(path.resolve("./source/css/", "sass/**/*.scss"))
     .pipe(
       sass({
-        includePaths: ["node_modules/foundation-sites/scss"]
+        includePaths: ["node_modules/foundation-sites/scss", "node_modules/flag-icon-css/sass"]
       }).on("error", sass.logError)
     )
     .pipe(gulp.dest(path.resolve("./source/css/")));
@@ -43,7 +45,7 @@ gulp.task("sass:production", function() {
     .src(path.resolve("./source/css/", "sass/**/*.scss"))
     .pipe(
       sass({
-        includePaths: ["node_modules/foundation-sites/scss"],
+        includePaths: ["node_modules/foundation-sites/scss", "node_modules/flag-icon-css/sass"],
         outputStyle: 'compressed'
       }).on("error", sass.logError)
     )
@@ -65,6 +67,31 @@ gulp.task("copy:css", function() {
     .pipe(gulp.dest(normalizePath("./public/css/")))
 });
 
+// Copy Flags
+gulp.task("copy:flags", function() {
+  return gulp
+    .src([normalizePath("./node_modules/flag-icon-css/flags/" + "/**/*")])
+    .pipe(gulp.dest(normalizePath("./public/flags/")))
+});
+
+gulp.task('svgstore', function () {
+  return gulp
+      .src(normalizePath("./source/icons/") + "/*.svg")
+      .pipe(svgmin(function (file) {
+          var prefix = path.basename(file.relative, path.extname(file.relative));
+          return {
+              plugins: [{
+                  cleanupIDs: {
+                      prefix: prefix + '-',
+                      minify: true
+                  }
+              }]
+          }
+      }))
+      .pipe(svgstore({ inlineSvg: true }))
+      .pipe(gulp.dest(normalizePath("./public/")))
+});
+
 gulp.task('watch', function(){
   gulp.watch('source/css/sass/**/*.scss', gulp.series("assets")); 
 })
@@ -79,6 +106,8 @@ gulp.task(
   gulp.series(
     "sass",
     "copy:css",
+    "copy:flags",
+    "svgstore"
   )
 );
 
@@ -87,6 +116,8 @@ gulp.task(
   gulp.series(
     "sass:production",
     "copy:css",
+    "copy:flags",
+    "svgstore"
   )
 );
 

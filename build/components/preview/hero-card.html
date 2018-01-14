@@ -28,5 +28,25 @@
 </div>
 
 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.js"
+  integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+  crossorigin="anonymous"></script>
+  <script>
+    $('[data-toggle]').click(function() {
+      console.log('open', $(this).closest('.card'));
+      $(this).closest('.card').find('.card-slider').toggleClass('is-open');
+    })
+    $('.card-slider').click(function() {
+      $(this).toggleClass('is-open');
+    })
+    $('.nav-main-toggle').click(function(){
+         $(this).siblings('.nav-main-panel').toggleClass('is-open');
+    })
+     $('.nav-main-close').click(function(){
+         $(this).parents('.nav-main-panel').toggleClass('is-open');
+    })
+
+  </script>
 </body>
 </html>

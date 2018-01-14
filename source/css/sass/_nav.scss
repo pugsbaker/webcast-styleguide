@@ -87,7 +87,7 @@
   font-weight: bold;
   position: relative;
 
-  &:after {
+  &:link:after {
     content: "";
     position: absolute;
     background: $color-primary;

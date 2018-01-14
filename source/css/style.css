@@ -2315,7 +2315,7 @@ input[type='search'] {
   text-decoration: none;
   font-weight: bold;
   position: relative; }
-  .nav-main-item:after {
+  .nav-main-item:link:after {
     content: "";
     position: absolute;
     background: #0CA8A0;

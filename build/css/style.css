@@ -2823,6 +2823,7 @@ a.button:hover, a.button:focus {
   left: 0;
   right: 0;
   top: 0;
+  z-index: 1;
   padding: 0.66667rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2856,6 +2857,12 @@ a.button:hover, a.button:focus {
   color: #fff;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), color-stop(60%, transparent));
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 60%); }
+
+.thumbnail-card-tools {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: right; }
 
 .hero-details {
   display: -webkit-box;

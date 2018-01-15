@@ -26,7 +26,7 @@ svg {
 }
 
 body {
-  background: $color-background;
+  @include variable(background, --color-background, $color-background);
 }
 
 ul {
@@ -35,7 +35,6 @@ ul {
 
 .content {
   padding: 1rem;
-  // max-width: 90rem;
   margin: 0 auto;
 
   @include breakpoint(medium) {
@@ -45,7 +44,6 @@ ul {
 
 .main-header {
   padding: 3rem 1rem 0;
-  // max-width: 90rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

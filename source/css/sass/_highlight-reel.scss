@@ -5,7 +5,7 @@ $highlight-grid-gap: 0.3rem;
   margin: 0;
   padding-bottom: 1.5rem;
   border-bottom: 0.75rem solid $color-border;
-  border-bottom-color: var(--color-border, $color-border);
+  @include variable(border-bottom-color, --color-border, $color-border);
 }
 
 .highlight-reel-grid-item, .highlight-reel-grid-item--feature {

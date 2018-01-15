@@ -1,0 +1,5 @@
+@include foundation-pagination;
+
+.pagination .current {
+  @include variable(background-color, --color-primary, $color-primary);
+}

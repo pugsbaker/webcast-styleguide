@@ -1,7 +1,7 @@
 .nav-main-panel {
 
   @media screen and (max-width: 40em) {
-    background: $color-primary;
+    @include variable(background-color, --color-primary, $color-primary);
     box-shadow: 0 4px 4px rgba(0,0,0,0.3);
     position: absolute;
     height: 100vh;
@@ -83,6 +83,7 @@
   display: block;
   padding: 0.5rem 1rem;
   color: $color-text;
+  @include variable(color, --color-text, $color-text);
   text-decoration: none;
   font-weight: bold;
   position: relative;
@@ -90,7 +91,7 @@
   &:link:after {
     content: "";
     position: absolute;
-    background: $color-primary;
+    @include variable(background-color, --color-primary, $color-primary);
     height: 4px;
     left: 1rem;
     right: 1rem;

@@ -1,0 +1,43 @@
+{
+  "context": {
+    "icons": [
+      {
+        "label": "playlist-add"
+      },
+      {
+        "label": "playlist-remove"
+      },
+      {
+        "label": "playlist"
+      },
+      {
+        "label": "info"
+      },
+      {
+        "label": "cart"
+      },
+      {
+        "label": "close"
+      },
+      {
+        "label": "lock"
+      },
+      
+      {
+        "label": "menu"
+      },
+      {
+        "label": "play-circle"
+      },
+      {
+        "label": "play"
+      },
+      {
+        "label": "play-solid-large"
+      },
+      {
+        "label": "play-outline-large"
+      }
+    ]
+  }
+}

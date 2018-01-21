@@ -2310,7 +2310,8 @@ input[type='search'] {
 
 @media screen and (max-width: 40em) {
   .nav-main-panel {
-    background: #0CA8A0;
+    background-color: #0CA8A0;
+    background-color: var(--color-primary, #0CA8A0);
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -2393,13 +2394,16 @@ input[type='search'] {
   display: block;
   padding: 0.5rem 1rem;
   color: #4A4A4A;
+  color: #4A4A4A;
+  color: var(--color-text, #4A4A4A);
   text-decoration: none;
   font-weight: bold;
   position: relative; }
   .nav-main-item:link:after {
     content: "";
     position: absolute;
-    background: #0CA8A0;
+    background-color: #0CA8A0;
+    background-color: var(--color-primary, #0CA8A0);
     height: 4px;
     left: 1rem;
     right: 1rem;

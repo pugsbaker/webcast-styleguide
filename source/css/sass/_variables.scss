@@ -5,12 +5,13 @@ $color-text: #4A4A4A;
 $color-text-light: #797979;
 $color-border: rgba(0, 0, 0, 0.25);
 $color-primary: #0CA8A0;
+$color-secondary: $color-text;
 $color-white: #fff;
 $spacing: 1;
 
 $foundation-palette: (
   primary: $color-primary,
-  secondary: #777,
+  secondary: $color-secondary,
   success: #3adb76,
   warning: #ffae00,
   alert: #ec5840,
@@ -47,6 +48,7 @@ $body-font-family: "proxima-nova", helvetica, arial, sans-serif;
   --color-background-light: $color-background-light;
   --color-background: $color-background;
   --color-primary: $color-primary;
+  --color-secondary: $color-secondary;
   --color-text:$color-text;
   --color-text-light:$color-text-light;
 }

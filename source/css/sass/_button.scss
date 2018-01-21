@@ -20,9 +20,26 @@ $button-radius: 3px;
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.1);
-  }
+    }
   }
 
+  &.secondary {
+    @include variable(background-color, --color-secondary, $color-secondary);
+  }
+
+  &.white {
+    @include variable(background-color, --color-white, $color-white);
+    @include variable(color, --color-primary, $color-primary);
+  }
+
+}
+
+.button-icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+  position: relative;
+  top: 2px;
 }
 
 .icon-button {

@@ -30,6 +30,14 @@
   @include variable(color, --color-primary, $color-primary);
 }
 
+.hero-heading--large {
+  @include fluid-type(2,30,400,1200);
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 0;
+  @include variable(color, --color-white, $color-white);
+}
+
 .hero-subheading {
   margin-bottom: $spacing/2+rem;
   @include fluid-type(0.8,10,400,1200);

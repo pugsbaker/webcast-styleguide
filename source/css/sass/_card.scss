@@ -44,6 +44,7 @@
   display: flex;
   padding: $spacing+rem;
   align-items: flex-end;
+  z-index: 2;
 }
 
 .card-footer-left {
@@ -52,6 +53,22 @@
 
 .card-footer-right {
   display: flex;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: inherit;
+  z-index: 2;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  transition: background-color 0.3s ease;
 }
 
 .card-date {
@@ -79,7 +96,7 @@
   right: 0;
   max-height: 90%;
   overflow: auto;
-
+  z-index: 2;
   transition: transform 0.3s ease;
   transform: translateY(100%);
 
@@ -152,5 +169,6 @@
 .thumbnail-card-tools {
   flex: 1;
   text-align: right;
+  z-index: 2;
 }
 

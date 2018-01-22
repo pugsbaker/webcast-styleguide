@@ -70,6 +70,17 @@
     
     
     <p>Sites that require theming can be updated by including a <code>theme.css</code> file or a style block in the head - after the main css <code>&lt;link&gt;</code> tag. Specific themeing capabilities for each component are outlined in each components’ notes</p>
+<h3 id="css-variables">CSS Variables</h3>
+<p>The css makes use of custom properties to allow easy theming of colors.</p>
+<code class="lang-scss"><pre>:root {
+  --<span class="hljs-attribute">color</span>-<span class="hljs-attribute">background</span>-light: <span class="hljs-variable">$color-background-light</span>;
+  --<span class="hljs-attribute">color</span>-<span class="hljs-attribute">background</span>: <span class="hljs-variable">$color-background</span>;
+  --<span class="hljs-attribute">color</span>-primary: <span class="hljs-variable">$color-primary</span>;
+  --<span class="hljs-attribute">color</span>-secondary: <span class="hljs-variable">$color-secondary</span>;
+  --<span class="hljs-attribute">color</span>-text:<span class="hljs-variable">$color-text</span>;
+  --<span class="hljs-attribute">color</span>-text-light:<span class="hljs-variable">$color-text-light</span>;
+}</pre></code><p><strong>NOTE</strong> 
+CSS custom properties are supported in all modern browers but unfortunately you will still need to override classes manually to support Internet Explore and older versions of browsers.</p>
 <h3 id="helper-classes">Helper classes</h3>
 <p>Some components using global theme helper classes. Override these styles to update text and background colours</p>
 <p>Theme classes are prefixed with <code>t-</code>.</p>
@@ -193,6 +204,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="../components/detail/colors.html" data-pjax>
                 <span>Colors</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/icons.html" data-pjax>
+                <span>Icons</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1160,6 +1195,30 @@
             
             
             
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../components/detail/channel.html" data-pjax>
+                <span>Channel</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
     
         
         

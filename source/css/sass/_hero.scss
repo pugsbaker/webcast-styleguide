@@ -31,7 +31,7 @@
 }
 
 .hero-heading--large {
-  @include fluid-type(2,30,400,1200);
+  @include fluid-type(2,25,400,1200);
   font-weight: 800;
   line-height: 1.1;
   margin: 0;
@@ -39,6 +39,7 @@
 }
 
 .hero-subheading {
+  margin-top: 0;
   margin-bottom: $spacing/2+rem;
   @include fluid-type(0.8,10,400,1200);
 }

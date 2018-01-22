@@ -1870,6 +1870,19 @@ ul {
 .action-bar-center {
   margin: auto; }
 
+.section-head {
+  display: flex; }
+
+.section-head-image {
+  width: 150px;
+  margin-right: 1rem; }
+  @media print, screen and (min-width: 40em) {
+    .section-head-image {
+      margin-right: 2rem; } }
+
+.section-head-content {
+  flex: 1; }
+
 div,
 dl,
 dt,
@@ -2834,7 +2847,7 @@ a.button:hover, a.button:focus {
 
 .hero-heading--large {
   font-size: 4em;
-  font-size: calc( 2em + (30 - 2) * ( (100vw - 400px) / ( 1200 - 400) ));
+  font-size: calc( 2em + (25 - 2) * ( (100vw - 400px) / ( 1200 - 400) ));
   font-weight: 800;
   line-height: 1.1;
   margin: 0;
@@ -2842,6 +2855,7 @@ a.button:hover, a.button:focus {
   color: var(--color-white, #fff); }
 
 .hero-subheading {
+  margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.6em;
   font-size: calc( 0.8em + (10 - 0.8) * ( (100vw - 400px) / ( 1200 - 400) )); }

@@ -23,12 +23,15 @@
   <li><a href="#" aria-label="Page 13">13</a></li>
   <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
 </ul>
-
 <script
   src="https://code.jquery.com/jquery-3.2.1.slim.js"
   integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+
   <script>
+      $(document).foundation();
+  
     $('[data-toggle]').click(function() {
       console.log('open', $(this).closest('.card'));
       $(this).closest('.card').find('.card-slider').toggleClass('is-open');

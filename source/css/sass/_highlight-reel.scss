@@ -105,3 +105,36 @@ $highlight-grid-gap: 0.3rem;
     }
   }
 }
+
+
+.highlight-reel-carousel {
+  padding-bottom: 60%;
+  margin: 0;
+
+  @media screen and (min-width: 45em) {
+    padding-bottom: 31%;
+  }
+
+  .flickity-viewport {
+    position: absolute;
+    width: 100%;
+  }
+}
+
+.highlight-reel-carousel-item {
+  list-style: none;
+  margin: 0;
+  padding:0.25rem;
+  width: 90%;
+  height: 100%;
+
+  @media screen and (min-width: 45em) {
+    width: 50vw;
+  }
+
+
+  &:not(.is-selected) {
+    opacity: 0.5;
+  }
+}
+

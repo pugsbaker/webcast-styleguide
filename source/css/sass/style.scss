@@ -5,6 +5,7 @@
 @import "typography";
 
 
+
 $input-margin: 0;
 @include foundation-form-select;
 @include foundation-form-text;
@@ -20,6 +21,7 @@ $input-margin: 0;
 @import "filters";
 @import "callout";
 @import "reveal";
+@import "flickity";
 
 @include foundation-visibility-classes;
 

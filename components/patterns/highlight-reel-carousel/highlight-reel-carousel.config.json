@@ -1,0 +1,9 @@
+{
+  "context": {
+    "catalogue_item": "@hero-card.catalogue_item",
+    "highlight_reel": "@card-list.catalogue_items"
+      
+      
+  }
+  
+}

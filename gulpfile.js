@@ -45,7 +45,7 @@ gulp.task("sass:production", function() {
     .src(path.resolve("./source/css/", "sass/**/*.scss"))
     .pipe(
       sass({
-        includePaths: ["node_modules/foundation-sites/scss", "node_modules/flag-icon-css/sass"],
+        includePaths: ["node_modules/foundation-sites/scss", "node_modules/flag-icon-css/sass", , "node_modules/flickity/dist"],
         outputStyle: 'compressed'
       }).on("error", sass.logError)
     )

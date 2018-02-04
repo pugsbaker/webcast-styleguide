@@ -19,10 +19,7 @@
   margin: 0;
   min-width: 200px;
   display: block;
-
-  &:not(:last-child) {
-    padding: 0 1rem 0 0;
-  }
+  padding: 0 0.5rem;
 
   &.filter-list-item--long {
     flex: 2;

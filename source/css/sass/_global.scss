@@ -27,6 +27,7 @@ svg {
 
 body {
   @include variable(background, --color-background, $color-background);
+  overflow-x: hidden;
 }
 
 ul {

@@ -108,23 +108,7 @@
 
 .card-image {
   position: relative;
-  padding-bottom: 56.25%; // 16.9 ratio
   overflow: hidden;
-
-  .hero-tile & {
-    padding-bottom: 57.83%;
-  }
-
-  > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    max-width: 110%;
-    width: 110%;
-  }
 
   .card-duration {
     position: absolute;
@@ -149,7 +133,10 @@
   align-items: flex-start;
   justify-content: space-between;
   color: $color-white;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0) 60%);
+
+  &:not(:empty) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0) 30%);
+  }
 }
 
 .card-image-overlay--bottom {
@@ -163,7 +150,10 @@
   align-items: flex-end;
   justify-content: space-between;
   color: $color-white;
-  background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0) 60%);
+
+  &:not(:empty) {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0) 60%);
+  }
 }
 
 .thumbnail-card-tools {

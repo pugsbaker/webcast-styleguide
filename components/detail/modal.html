@@ -14,7 +14,7 @@
 <link rel="stylesheet" href="../../themes/mandelbrot/css/teal.css?cachebust=1.2.0" type="text/css">
 
 
-<title>Button: Large | WebcastTV Component Library</title>
+<title>Modal | WebcastTV Component Library</title>
 
 </head>
 <body>
@@ -52,14 +52,14 @@
     
     
 
-<div class="Pen" data-behaviour="pen" id="pen-2dd614769c2c7e174fb50e5aeba54ef4">
+<div class="Pen" data-behaviour="pen" id="pen-d46fcf036ee517335a29e93d3a9225e7">
 
     
 
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
-        <a class="Pen-previewLink" href="../preview/button--large.html" title="Component preview">
-            Button: Large
+        <a class="Pen-previewLink" href="../preview/modal.html" title="Component preview">
+            Modal
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -79,14 +79,14 @@
 </div>
 
 
-    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-2dd614769c2c7e174fb50e5aeba54ef4">
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-d46fcf036ee517335a29e93d3a9225e7">
     <div class="Preview-wrapper" data-role="resizer">
         <div class="Preview-resizer">
             
              <iframe
                 class="Preview-iframe"
                 data-role="window"
-                src="../preview/button--large.html"
+                src="../preview/modal.html"
                 sandbox="allow-same-origin allow-scripts allow-forms"
                  style=""
                 marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
@@ -101,7 +101,7 @@
     <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
 
     <div class="Pen-panel Pen-info" data-role="info">
-    <div class="Browser" data-behaviour="browser" id="browser-2dd614769c2c7e174fb50e5aeba54ef4">
+    <div class="Browser" data-behaviour="browser" id="browser-d46fcf036ee517335a29e93d3a9225e7">
 
     
 
@@ -110,20 +110,22 @@
         
         
         <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
-            <a href="#browser-2dd614769c2c7e174fb50e5aeba54ef4-panel-html">HTML</a>
+            <a href="#browser-d46fcf036ee517335a29e93d3a9225e7-panel-html">HTML</a>
         </li>
         
         
         
         <li class="Browser-tab Browser-tab--view" data-role="tab">
-            <a href="#browser-2dd614769c2c7e174fb50e5aeba54ef4-panel-view">View</a>
+            <a href="#browser-d46fcf036ee517335a29e93d3a9225e7-panel-view">View</a>
         </li>
         
         
         
         <li class="Browser-tab Browser-tab--context" data-role="tab">
-            <a href="#browser-2dd614769c2c7e174fb50e5aeba54ef4-panel-context">Context</a>
+            <a href="#browser-d46fcf036ee517335a29e93d3a9225e7-panel-context">Context</a>
         </li>
+        
+        
         
         
         
@@ -132,13 +134,13 @@
         
         
         <li class="Browser-tab Browser-tab--info" data-role="tab">
-            <a href="#browser-2dd614769c2c7e174fb50e5aeba54ef4-panel-info">Info</a>
+            <a href="#browser-d46fcf036ee517335a29e93d3a9225e7-panel-info">Info</a>
         </li>
         
         
         
         <li class="Browser-tab Browser-tab--notes" data-role="tab">
-            <a href="#browser-2dd614769c2c7e174fb50e5aeba54ef4-panel-notes">Notes</a>
+            <a href="#browser-d46fcf036ee517335a29e93d3a9225e7-panel-notes">Notes</a>
         </li>
         
         
@@ -148,31 +150,45 @@
 
     
     
-<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-2dd614769c2c7e174fb50e5aeba54ef4-panel-html">
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-d46fcf036ee517335a29e93d3a9225e7-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"large button"</span>&gt;</span>large button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>We use foundation reveal modal with no modifications.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-open</span>=<span class="hljs-string">"exampleModal1"</span>&gt;</span>Click me for a modal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reveal"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleModal1"</span> <span class="hljs-attr">data-reveal</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Awesome. I Have It.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lead"</span>&gt;</span>Your couch. It is mine.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>I'm a cool paragraph that lives inside of an even cooler modal. Wins!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close-button"</span> <span class="hljs-attr">data-close</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close modal"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </div>
 
     
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-2dd614769c2c7e174fb50e5aeba54ef4-panel-view">
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-d46fcf036ee517335a29e93d3a9225e7-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ url }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string"> button"</span>&gt;</span></span><span class="hljs-template-variable">{{ cta }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>We use foundation reveal modal with no modifications.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">data-open</span>=<span class="hljs-string">"exampleModal1"</span>&gt;</span>Click me for a modal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"reveal"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"exampleModal1"</span> <span class="hljs-attr">data-reveal</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Awesome. I Have It.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"lead"</span>&gt;</span>Your couch. It is mine.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>I'm a cool paragraph that lives inside of an even cooler modal. Wins!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close-button"</span> <span class="hljs-attr">data-close</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Close modal"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">aria-hidden</span>=<span class="hljs-string">"true"</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
     
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-2dd614769c2c7e174fb50e5aeba54ef4-panel-context">
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-d46fcf036ee517335a29e93d3a9225e7-panel-context">
     <code class="Code Code--lang-json">
         
             
-            <pre>{
-  <span class="hljs-attr">"url"</span>: <span class="hljs-string">"#"</span>,
-  <span class="hljs-attr">"cta"</span>: <span class="hljs-string">"large button"</span>,
-  <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"large"</span>
-}</pre>
+            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
             
         
     </code>
@@ -182,63 +198,30 @@
     
 
 
+
+
     
-    <div class="Browser-panel" data-role="tab-panel" id="browser-2dd614769c2c7e174fb50e5aeba54ef4-panel-info">
+    <div class="Browser-panel" data-role="tab-panel" id="browser-d46fcf036ee517335a29e93d3a9225e7-panel-info">
     <ul class="Meta">
         <li class="Meta-item">
             <strong class="Meta-key">Handle:</strong>
-            <span class="Meta-value">@button--large</span>
+            <span class="Meta-value">@modal</span>
         </li>
         
         
         
         
-        
-        <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(7)</em>:</strong>
-            <span class="Meta-value Meta-value--linkList">
-            
-                <a href="button--default.html">
-                    <span>Default</span>
-                </a>, 
-            
-                <a href="button--tiny.html">
-                    <span>Tiny</span>
-                </a>, 
-            
-                <a href="button--small.html">
-                    <span>Small</span>
-                </a>, 
-            
-                <a href="">
-                    <span>Large</span>
-                </a>, 
-            
-                <a href="button--expanded.html">
-                    <span>Expanded</span>
-                </a>, 
-            
-                <a href="button--success.html">
-                    <span>Success</span>
-                </a>, 
-            
-                <a href="button--alert.html">
-                    <span>Alert</span>
-                </a>
-            
-            </span>
-        </li>
         
         <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
             <span class="Meta-value">
                 <ul>
-                    <li><a data-no-pjax href="../preview/button--large.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <li><a data-no-pjax href="../preview/modal.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
 </a></li>
-                    <li><a data-no-pjax href="../render/button--large.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+                    <li><a data-no-pjax href="../render/modal.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
@@ -248,7 +231,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">components/base/03-forms/00-button/button.hbs</span>
+            <span class="Meta-value">components/layout/modal/modal.hbs</span>
         </li>
         
         
@@ -256,12 +239,10 @@
 </div>
 
     
-    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-2dd614769c2c7e174fb50e5aeba54ef4-panel-notes">
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-d46fcf036ee517335a29e93d3a9225e7-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p>Buttons import Foundation Buttons</p>
-<p>visit … for docs</p>
-
+        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
         
     </div>
 </div>
@@ -701,8 +682,8 @@
     
         
         
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
-            <a class="Tree-entityLink" href="" data-pjax>
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--large.html" data-pjax>
                 <span>Large</span>
                 
 
@@ -1071,8 +1052,8 @@
     
         
         
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="modal.html" data-pjax>
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
                 <span>Modal</span>
                 
 

@@ -127,6 +127,7 @@ $highlight-grid-gap: 0.3rem;
   padding:0.25rem;
   width: 90%;
   height: 100%;
+  min-height: 100%;
 
   @media screen and (min-width: 45em) {
     width: 50vw;
@@ -137,4 +138,5 @@ $highlight-grid-gap: 0.3rem;
     opacity: 0.5;
   }
 }
+
 

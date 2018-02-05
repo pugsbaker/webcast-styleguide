@@ -1,11 +1,26 @@
+.hero-tile {
+  .card-image-overlay--bottom {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0) 60%);
+  }
+}
+
 .hero-details {
   display: flex;
   align-items: flex-end;
   
   @include breakpoint(medium) {
-    padding: $spacing+rem;
+    padding: $spacing/2+rem;
   }
   
+  .highlight-reel-carousel-item & {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+  }
+  .highlight-reel-carousel-item.is-selected & {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .hero-details-image {
@@ -19,11 +34,10 @@
 
 .hero-details-text {
   flex: 1;
-  margin-left: $spacing+rem;
 }
 
 .hero-heading {
-  @include fluid-type(1,20,400,1200);
+  @include fluid-type(1,14,400,1200);
   font-weight: 800;
   line-height: 1.1;
   margin: 0;
@@ -31,7 +45,7 @@
 }
 
 .hero-heading--large {
-  @include fluid-type(2,25,400,1200);
+  @include fluid-type(2,12,400,1200);
   font-weight: 800;
   line-height: 1.1;
   margin: 0;
@@ -41,5 +55,5 @@
 .hero-subheading {
   margin-top: 0;
   margin-bottom: $spacing/2+rem;
-  @include fluid-type(0.8,10,400,1200);
+  @include fluid-type(0.8,6,400,1200);
 }

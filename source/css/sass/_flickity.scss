@@ -51,15 +51,16 @@ http://flickity.metafizzy.co
   height: 44px;
   border: none;
   border-radius: 50%;
-  background: white;
-  background: hsla(0, 0%, 100%, 0.75);
+  @include variable(background-color, --color-primary, $color-primary);
   cursor: pointer;
   /* vertically center */
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-.flickity-prev-next-button:hover { background: white; }
+.flickity-prev-next-button:hover { 
+  @include variable(background-color, --color-primary, $color-primary);
+}
 
 .flickity-prev-next-button:focus {
   outline: none;
@@ -96,7 +97,7 @@ http://flickity.metafizzy.co
 }
 
 .flickity-prev-next-button .arrow {
-  fill: #333;
+  fill: $color-white;
 }
 
 /* ---- page dots ---- */
@@ -131,4 +132,5 @@ http://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
+  @include variable(background-color, --color-white, $color-white);
 }

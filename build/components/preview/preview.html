@@ -18,6 +18,7 @@
   integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   <script>
       $(document).foundation();
@@ -35,7 +36,14 @@
      $('.nav-main-close').click(function(){
          $(this).parents('.nav-main-panel').toggleClass('is-open');
     })
-
+$('.highlight-reel-carousel').flickity({
+  // options
+  cellAlign: 'center',
+  contain: true,
+  wrapAround: true,
+  setGallerySize: false,
+  prevNextButtons: false
+});
   </script>
 </body>
 </html>

@@ -1861,6 +1861,13 @@ ul {
     .content--sparse {
       padding: 3rem; } }
 
+.content--top {
+  padding-top: 1rem;
+  margin: 0 auto; }
+  @media print, screen and (min-width: 40em) {
+    .content--top {
+      padding-top: 3rem; } }
+
 .main-header {
   padding: 3rem 1rem 0;
   margin: 0 auto;
@@ -2942,9 +2949,18 @@ a.button:hover, a.button:focus {
   text-align: right;
   z-index: 2; }
 
-.hero-tile .card-image-overlay--bottom {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), color-stop(60%, transparent));
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 60%); }
+.hero-tile {
+  position: relative;
+  padding-bottom: 56.25%; }
+  .hero-tile .card-image-overlay--bottom {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), color-stop(60%, transparent));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 60%); }
+  .hero-tile .card-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 .hero-details {
   display: -webkit-box;
@@ -3177,11 +3193,15 @@ a.button:hover, a.button:focus {
       grid-column-start: span 3; } } }
 
 .highlight-reel-carousel {
-  padding-bottom: 60%;
+  height: 100%;
+  padding-bottom: 50.625%;
   margin: 0; }
   @media screen and (min-width: 45em) {
     .highlight-reel-carousel {
-      padding-bottom: 31%; } }
+      padding-bottom: 39.375%; } }
+  @media screen and (min-width: 60em) {
+    .highlight-reel-carousel {
+      padding-bottom: 33.75%; } }
   .highlight-reel-carousel .flickity-viewport {
     position: absolute;
     width: 100%; }
@@ -3189,15 +3209,24 @@ a.button:hover, a.button:focus {
 .highlight-reel-carousel-item {
   list-style: none;
   margin: 0;
-  padding: 0.25rem;
-  width: 90%;
+  padding: 0.15rem;
+  width: 90vw;
   height: 100%;
   min-height: 100%; }
   @media screen and (min-width: 45em) {
     .highlight-reel-carousel-item {
-      width: 50vw; } }
-  .highlight-reel-carousel-item:not(.is-selected) {
-    opacity: 0.5; }
+      width: 70vw; } }
+  @media screen and (min-width: 60em) {
+    .highlight-reel-carousel-item {
+      width: 60vw; } }
+  .highlight-reel-carousel-item:not(.is-selected) .hero-tile:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8); }
 
 .filter-list {
   list-style: none;
@@ -3427,7 +3456,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -5px;
+  bottom: -25px;
   padding: 0;
   margin: 0;
   list-style: none;

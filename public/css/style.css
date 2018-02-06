@@ -1863,10 +1863,12 @@ ul {
 
 .content--top {
   padding-top: 1rem;
+  padding-bottom: 2.5rem;
   margin: 0 auto; }
   @media print, screen and (min-width: 40em) {
     .content--top {
-      padding-top: 3rem; } }
+      padding-top: 3rem;
+      padding-bottom: 2.5rem; } }
 
 .main-header {
   padding: 3rem 1rem 0;
@@ -2999,7 +3001,7 @@ a.button:hover, a.button:focus {
   flex: 1; }
 
 .hero-heading {
-  font-size: 2em;
+  font-size: 1.5em;
   font-size: calc( 1em + (14 - 1) * ( (100vw - 400px) / ( 1200 - 400) ));
   font-weight: 800;
   line-height: 1.1;
@@ -3008,7 +3010,7 @@ a.button:hover, a.button:focus {
   color: var(--color-primary, #0CA8A0); }
 
 .hero-heading--large {
-  font-size: 4em;
+  font-size: 3em;
   font-size: calc( 2em + (12 - 2) * ( (100vw - 400px) / ( 1200 - 400) ));
   font-weight: 800;
   line-height: 1.1;
@@ -3019,7 +3021,7 @@ a.button:hover, a.button:focus {
 .hero-subheading {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-size: calc( 0.8em + (6 - 0.8) * ( (100vw - 400px) / ( 1200 - 400) )); }
 
 .list--inline {

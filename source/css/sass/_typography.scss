@@ -1,7 +1,7 @@
 @include foundation-typography-base;
 /* Fluid type */
 @mixin fluid-type($min, $max, $lower-size, $upper-size) {
-  font-size: #{$min*2}em;
+  font-size: #{$min*1.5}em;
   font-size: calc( #{$min}em + (#{$max} - #{$min}) * ( (100vw - #{$lower-size}px) / ( #{$upper-size} - #{$lower-size}) ));
 }
 

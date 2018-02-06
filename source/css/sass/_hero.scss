@@ -1,6 +1,16 @@
 .hero-tile {
+  position: relative;
+  padding-bottom: 56.25%;
   .card-image-overlay--bottom {
     background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0) 60%);
+  }
+
+  .card-image {
+    position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
   }
 }
 

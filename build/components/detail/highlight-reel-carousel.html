@@ -153,7 +153,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-350e17dbb295a503c6199474d2a140ed-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-carousel"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-carousel"</span> <span class="hljs-attr">data-flickity</span>=<span class="hljs-string">'{ "cellAlign": "center", "contain": true,  "wrapAround": true,  "setGallerySize": false,  "prevNextButtons": false}'</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-carousel-item"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"hero-tile"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-image"</span>&gt;</span>
@@ -267,7 +267,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-350e17dbb295a503c6199474d2a140ed-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-carousel"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-carousel"</span> <span class="hljs-attr">data-flickity</span>=<span class="hljs-string">'{ "cellAlign": "center", "contain": true,  "wrapAround": true,  "setGallerySize": false,  "prevNextButtons": false}'</span>&gt;</span>
     </span><span class="hljs-template-tag">{{#<span class="hljs-name">highlight</span>_reel}}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"highlight-reel-carousel-item"</span>&gt;</span>
       </span><span class="hljs-template-variable">{{&gt; <a href="hero-card.html">@hero-card</a> }}</span><span class="xml">
@@ -781,7 +781,9 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-350e17dbb295a503c6199474d2a140ed-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <p class="Browser-isEmptyNote">There are no notes for this item.</p>
+        <p>The carousel highlight reel requires flickity js library</p>
+<p>full docs are available at <a href="https://flickity.metafizzy.co/">https://flickity.metafizzy.co/</a></p>
+
         
     </div>
 </div>

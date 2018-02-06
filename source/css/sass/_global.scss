@@ -52,6 +52,16 @@ ul {
   }
 }
 
+.content--top {
+  padding-top: 1rem;
+  margin: 0 auto;
+
+  @include breakpoint(medium) {
+    padding-top: 3rem;
+  }
+}
+
+
 .main-header {
   padding: 3rem 1rem 0;
   margin: 0 auto;

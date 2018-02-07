@@ -104,12 +104,13 @@ ul {
 }
 
 .section-head-image {
-  width: 150px;
+  width: 300px;
   margin-right: 1rem;
 
   @include breakpoint(medium) {
     margin-right: 2rem;
   }
+
 }
 .section-head-content {
   flex: 1;

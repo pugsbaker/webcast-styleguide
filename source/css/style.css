@@ -1890,7 +1890,7 @@ ul {
   display: flex; }
 
 .section-head-image {
-  width: 150px;
+  width: 300px;
   margin-right: 1rem; }
   @media print, screen and (min-width: 40em) {
     .section-head-image {
@@ -3065,7 +3065,7 @@ a.button:hover, a.button:focus {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.4); }
 
 .filter-list {
   list-style: none;
@@ -3074,7 +3074,6 @@ a.button:hover, a.button:focus {
   display: flex;
   flex-wrap: wrap; }
   .filter-list input {
-    margin: 0;
     width: 100%; }
   .filter-list select {
     width: 100%; }
@@ -3093,8 +3092,6 @@ a.button:hover, a.button:focus {
 .callout {
   padding: 1rem;
   margin-bottom: 1rem;
-  background-color: #0CA8A0;
-  background-color: var(--color-primary, #0CA8A0);
   text-align: center; }
   .callout .button {
     margin-bottom: 0.5rem; }

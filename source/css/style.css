@@ -1900,16 +1900,20 @@ ul {
   flex: 1; }
 
 .inner-content {
-  display: flex;
   max-width: 70rem;
   margin: auto; }
+  @media print, screen and (min-width: 40em) {
+    .inner-content {
+      display: flex; } }
 
-.inner-content-main {
-  flex: 1;
-  padding: 0 2rem; }
+@media print, screen and (min-width: 40em) {
+  .inner-content-main {
+    flex: 1;
+    padding: 0 2rem; } }
 
-.inner-content-sidebar {
-  max-width: 300px; }
+@media print, screen and (min-width: 40em) {
+  .inner-content-sidebar {
+    max-width: 16rem; } }
 
 .advertising {
   margin-top: 3rem;
@@ -2698,6 +2702,19 @@ a.button:hover, a.button:focus {
   .icon-button:not(:last-child) {
     margin-right: 0.25rem; }
 
+.icon-button--large {
+  width: 3rem;
+  height: auto; }
+  .icon-button--large svg {
+    width: 2rem;
+    height: 2rem; }
+
+.icon-button-label {
+  font-size: 0.6rem;
+  display: inline-block;
+  line-height: 1.2;
+  word-break: initial; }
+
 .label {
   color: currentColor;
   font-size: 0.65rem;
@@ -3325,6 +3342,25 @@ http://flickity.metafizzy.co
   opacity: 1;
   background-color: #fff;
   background-color: var(--color-white, #fff); }
+
+.presenter {
+  display: flex;
+  margin-top: 2rem; }
+  @media print, screen and (min-width: 40em) {
+    .presenter {
+      display: block;
+      margin: 0; } }
+
+.presenter-image {
+  max-width: 10rem;
+  height: 100%;
+  margin-right: 1rem; }
+  @media print, screen and (min-width: 40em) {
+    .presenter-image {
+      max-width: initial; } }
+
+.presenter-details {
+  flex: 1; }
 
 .presenter-name {
   margin: 1rem 0 0; }

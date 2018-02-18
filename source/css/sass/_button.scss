@@ -60,3 +60,19 @@ $button-radius: 3px;
     margin-right: 0.25rem;
   }
 }
+
+.icon-button--large {
+  width: 3rem;
+  height: auto;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+  }
+} 
+.icon-button-label {
+  font-size: 0.6rem;
+  display: inline-block;
+  line-height: 1.2;
+  word-break: initial;
+}

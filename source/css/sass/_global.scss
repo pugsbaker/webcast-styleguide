@@ -113,20 +113,29 @@ ul {
 
 }
 .section-head-content {
+  
   flex: 1;
 }
 
 .inner-content {
-  display:flex;
+  @include breakpoint(medium) {
+    display:flex;
+  }
   max-width: 70rem;
   margin: auto;
 }
 .inner-content-main {
-  flex:1;
-  padding: 0 2rem;
+
+  @include breakpoint(medium) {
+    flex:1;
+    padding: 0 2rem;
+  }
+  
 }
 .inner-content-sidebar {
-  max-width: 300px;
+  @include breakpoint(medium) {
+    max-width: 16rem;
+  }
 }
 
 .advertising {

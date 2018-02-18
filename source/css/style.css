@@ -1899,6 +1899,25 @@ ul {
 .section-head-content {
   flex: 1; }
 
+.inner-content {
+  display: flex;
+  max-width: 70rem;
+  margin: auto; }
+
+.inner-content-main {
+  flex: 1;
+  padding: 0 2rem; }
+
+.inner-content-sidebar {
+  max-width: 300px; }
+
+.advertising {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 0.75rem solid rgba(0, 0, 0, 0.25);
+  border-top-color: rgba(0, 0, 0, 0.25);
+  border-top-color: var(--color-border, rgba(0, 0, 0, 0.25)); }
+
 div,
 dl,
 dt,
@@ -3306,6 +3325,15 @@ http://flickity.metafizzy.co
   opacity: 1;
   background-color: #fff;
   background-color: var(--color-white, #fff); }
+
+.presenter-name {
+  margin: 1rem 0 0; }
+
+.presenter-bio {
+  font-weight: 600;
+  margin: 0;
+  color: #797979;
+  color: var(--color-text-light, #797979); }
 
 .hide {
   display: none !important; }

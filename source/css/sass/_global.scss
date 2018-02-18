@@ -115,3 +115,23 @@ ul {
 .section-head-content {
   flex: 1;
 }
+
+.inner-content {
+  display:flex;
+  max-width: 70rem;
+  margin: auto;
+}
+.inner-content-main {
+  flex:1;
+  padding: 0 2rem;
+}
+.inner-content-sidebar {
+  max-width: 300px;
+}
+
+.advertising {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 0.75rem solid $color-border;
+  @include variable(border-top-color, --color-border, $color-border);
+}

@@ -1,0 +1,9 @@
+.presenter-name {
+  margin: 1rem 0 0;
+}
+
+.presenter-bio {
+  font-weight: 600;
+  margin: 0;
+  @include variable(color, --color-text-light, $color-text-light);
+}

@@ -1843,7 +1843,8 @@ body {
   background: #EDEDED;
   background: var(--color-background, #EDEDED);
   overflow-x: hidden;
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 ul {
   margin: 0; }

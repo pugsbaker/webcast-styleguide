@@ -3,7 +3,7 @@
   @media screen and (max-width: 40em) {
     @include variable(background-color, --color-primary, $color-primary);
     box-shadow: 0 4px 4px rgba(0,0,0,0.3);
-    position: absolute;
+    position: fixed;
     height: 100vh;
     right: 0;
     top: 0;

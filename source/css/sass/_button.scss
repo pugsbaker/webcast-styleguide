@@ -47,7 +47,7 @@ $button-radius: 3px;
   height: 1.75rem;
   display: inline;
   @include variable(color, --color-text-light, $color-text-light);
-  padding: 0.1rem;
+  padding: 0.15rem;
   svg {
     width: 100%;
   }

@@ -2379,7 +2379,7 @@ input[type='search'] {
     background-color: var(--color-primary, #0CA8A0);
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-    position: absolute;
+    position: fixed;
     height: 100vh;
     right: 0;
     top: 0;
@@ -2785,7 +2785,7 @@ a.button:hover, a.button:focus {
   display: inline;
   color: #797979;
   color: var(--color-text-light, #797979);
-  padding: 0.1rem; }
+  padding: 0.15rem; }
   .icon-button svg {
     width: 100%; }
   .icon-button:hover {

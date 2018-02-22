@@ -1842,7 +1842,8 @@ svg {
 body {
   background: #EDEDED;
   background: var(--color-background, #EDEDED);
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative; }
 
 ul {
   margin: 0; }

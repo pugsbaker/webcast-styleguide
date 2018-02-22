@@ -1844,7 +1844,7 @@ body {
   background: var(--color-background, #EDEDED);
   overflow-x: hidden;
   position: relative;
-  width: 100%; }
+  width: 100vw; }
 
 ul {
   margin: 0; }

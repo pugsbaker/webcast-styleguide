@@ -1859,6 +1859,12 @@ ul {
       padding-top: 3rem;
       padding-bottom: 2.5rem; } }
 
+.collapse--bottom {
+  padding-bottom: 0; }
+
+.collapse--top {
+  padding-top: 0; }
+
 .main-header {
   padding: 3rem 1rem 0;
   margin: 0 auto;

@@ -9,7 +9,9 @@
 }
 
 .card-body {
-  flex: 1;
+  flex: 1 1;
+  -ms-flex-preferred-size: auto;
+  // height: 100%;
   padding: $spacing + rem;
 }
 

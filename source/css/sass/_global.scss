@@ -87,8 +87,9 @@ ul {
 }
 
 .action-bar {
-  display: flex;
-  align-items: flex-end;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
   padding-top: 1rem;
   padding-bottom: 1rem;
 
@@ -98,7 +99,7 @@ ul {
 }
 
 .action-bar-left {
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 .action-bar-center {

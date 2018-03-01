@@ -1901,6 +1901,8 @@ ul {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-top: 1rem;
   padding-bottom: 1rem; }
   .action-bar + .action-bar {
@@ -1908,8 +1910,8 @@ ul {
 
 .action-bar-left {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1; }
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
 
 .action-bar-center {
   margin: auto; }
@@ -2840,8 +2842,9 @@ a.button:hover, a.button:focus {
 
 .card-body {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  -ms-flex-preferred-size: auto;
   padding: 1rem; }
 
 .card-heading {
@@ -3016,7 +3019,8 @@ a.button:hover, a.button:focus {
   display: flex;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: flex-end; }
+  align-items: flex-end;
+  width: 100%; }
   @media print, screen and (min-width: 40em) {
     .hero-details {
       padding: 0.5rem; } }
